@@ -1,0 +1,8 @@
+OSGI Dependency Visualiser
+
+At startup of the net.bogdoll.osgi.depvis module
+the current osgi dependency structure will be
+visualized as a osgi.dot file, which can be visualized
+with GraphViz (http://www.graphviz.org).
+
+
