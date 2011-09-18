@@ -1,5 +1,6 @@
 -buildpath: guava,\
-	osgi.core
+	osgi.core,\
+	osgi.cmpn
 Bundle-Activator: net.bogdoll.osgi.depvis.Activator
 Private-Package: net.bogdoll.osgi.depvis,\
 	net.bogdoll.osgi.util

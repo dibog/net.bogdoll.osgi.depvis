@@ -1,6 +1,8 @@
 package net.bogdoll.osgi.depvis;
 
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Enumeration;
@@ -8,6 +10,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import net.bogdoll.osgi.util.IterUtil;
 import net.bogdoll.osgi.util.OsgiUtil;
@@ -15,27 +19,34 @@ import net.bogdoll.osgi.util.OsgiUtil;
 import org.osgi.framework.Bundle;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
+import org.osgi.framework.BundleEvent;
+import org.osgi.util.tracker.BundleTracker;
+import org.osgi.util.tracker.BundleTrackerCustomizer;
 
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;
 
-public class Activator implements BundleActivator {
+public class Activator implements BundleActivator, BundleTrackerCustomizer {
+
+	private BundleTracker mBundleTracker;
+	private Bundle mBundle;
 
 	@Override
 	public void start(BundleContext context) throws Exception {
-		FileOutputStream fout = new FileOutputStream("osgi.dot");
-		PrintStream out = new PrintStream(fout);
-		dumpDependeny(out,context.getBundles());
+		mBundleTracker = new BundleTracker(context, Bundle.ACTIVE|Bundle.STARTING, this);
+		mBundleTracker.open();
 	}
 
 	@Override
 	public void stop(BundleContext context) throws Exception {
+		mBundleTracker.close();
+		mBundleTracker = null;
 	}
 	
 	public void dumpDependeny(PrintStream out, Bundle[] aBundles) {
 		Multimap<String, Bundle> exports = HashMultimap.create();
 		for(Bundle b : aBundles) {
-			if(b.getBundleId()>0) {
+			if(b.getBundleId()>0 && b.getState()==Bundle.ACTIVE) {
 				Map<String, List<String>> unpack = OsgiUtil.unpack((String)b.getHeaders().get("Export-Package"));
 				for(String p : unpack.keySet()) {
 					exports.put(p, b);
@@ -45,7 +56,7 @@ public class Activator implements BundleActivator {
 		
 		Multimap<Bundle, Object[]> imports = HashMultimap.create();		
 		for(Bundle b : aBundles) {
-			if(b.getBundleId()>0) {
+			if(b.getBundleId()>0 && b.getState()==Bundle.ACTIVE) {
 				Map<String, List<String>> unpack = OsgiUtil.unpack((String)b.getHeaders().get("Import-Package"));
 				for(String p : unpack.keySet()) {
 					Set<Bundle> set = new HashSet<Bundle>(exports.get(p));
@@ -115,5 +126,41 @@ public class Activator implements BundleActivator {
 
 	private String extractClassName(String path) {
 		return path.substring(0, path.length()-6).replaceAll("/",".");
+	}
+
+	@Override
+	public Object addingBundle(Bundle bundle, BundleEvent event) {
+		updateVisualisation(bundle.getBundleContext().getBundles());
+		return bundle;
+	}
+
+	@Override
+	public void modifiedBundle(Bundle bundle, BundleEvent event, Object object) {
+		updateVisualisation(bundle.getBundleContext().getBundles());
+	}
+
+	@Override
+	public void removedBundle(Bundle bundle, BundleEvent event, Object object) {
+		updateVisualisation(bundle.getBundleContext().getBundles());
+	}
+	
+	private void updateVisualisation(Bundle[] aBundles) {
+		FileOutputStream fout = null;
+		try {
+			fout = new FileOutputStream("osgi.dot");
+			dumpDependeny(new PrintStream(fout), aBundles);
+		}
+		catch (FileNotFoundException e) {
+			Logger.getLogger(Activator.class.getName()).log(Level.SEVERE, "Couldn't use file 'osgi.dot'", e);
+		}
+		finally {
+			if(fout!=null) {
+				try {
+					fout.close();
+				} catch(IOException e) {
+					// ignoring the closing exception
+				}
+			}
+		}
 	}
 }
