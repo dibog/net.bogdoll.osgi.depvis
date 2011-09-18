@@ -1,0 +1,2 @@
+Private-Package: bundlec.priv
+Export-Package: bundlec.pub
