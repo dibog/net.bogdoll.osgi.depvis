@@ -1,5 +1,3 @@
-.metadata
-bin
-cnf
-generated
-guava
+/.metadata
+/*/generated
+/*/bin

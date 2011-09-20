@@ -1,8 +1,0 @@
--runfw: org.apache.felix.framework
--runbundles: org.apache.felix.shell;version=1.4.2,\
-	org.apache.felix.shell.tui;version=1.4.1,\
-	TestBundles.bundle.A;version=latest,\
-	TestBundles.bundle.B;version=latest,\
-	TestBundles.bundle.C;version=latest,\
-	guava;version=latest,\
-	net.bogdoll.osgi.depvis;version=latest

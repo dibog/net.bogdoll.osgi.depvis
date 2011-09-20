@@ -1,0 +1,3620 @@
+<?xml version="1.0" encoding="UTF-8"?><repository lastmodified="1316405488539" name="Local Repo"><?xml-stylesheet type='text/xsl' href='http://www.osgi.org/www/obr2html.xsl'?>
+  <resource id="biz.aQute.bnd/1.44.0" presentationname="bnd" symbolicname="biz.aQute.bnd" uri="repo/biz.aQute.bnd/biz.aQute.bnd-1.44.0.jar" version="1.44.0">
+    <description>
+      A utility and plugin to wrap, build, print, or otherwise manipulate
+       bundles
+    </description>
+    <size>
+      1036787
+    </size>
+    <license>
+      http://www.opensource.org/licenses/apache2.0.php; description="All
+       files contained in this JAR are licensed under the Apache
+       2.0 license, unless noted differently in their source (see
+       swing2swt)."; link=LICENSE
+    </license>
+    <copyright>
+      All files contained in this JAR are licensed under the Apache
+       2.0 license, unless noted differently in their source (see
+       swing2swt).
+    </copyright>
+    <capability name="bundle">
+      <p n="manifestversion" v="2"/>
+      <p n="presentationname" v="bnd"/>
+      <p n="symbolicname" v="biz.aQute.bnd"/>
+      <p n="version" t="version" v="1.44.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="aQute.bnd.service"/>
+      <p n="version" t="version" v="1.44.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="aQute.bnd.service.action"/>
+      <p n="version" t="version" v="1.43.1"/>
+    </capability>
+    <require extend="false" filter="(&amp;(symbolicname=org.eclipse.ui.ide)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))" multiple="false" name="bundle" optional="false">
+      Require Bundle org.eclipse.ui.ide; [3.3.0,4.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(symbolicname=org.eclipse.jface.text)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))" multiple="false" name="bundle" optional="false">
+      Require Bundle org.eclipse.jface.text; [3.3.0,4.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(symbolicname=org.eclipse.ui.workbench.texteditor)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))" multiple="false" name="bundle" optional="false">
+      Require Bundle org.eclipse.ui.workbench.texteditor; [3.3.0,4.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(symbolicname=org.eclipse.ui.editors)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))" multiple="false" name="bundle" optional="false">
+      Require Bundle org.eclipse.ui.editors; [3.3.0,4.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(symbolicname=org.eclipse.ui)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))" multiple="false" name="bundle" optional="false">
+      Require Bundle org.eclipse.ui; [3.3.0,4.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(symbolicname=org.eclipse.debug.ui)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))" multiple="false" name="bundle" optional="false">
+      Require Bundle org.eclipse.debug.ui; [3.3.0,4.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(symbolicname=org.eclipse.jdt.core)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))" multiple="false" name="bundle" optional="false">
+      Require Bundle org.eclipse.jdt.core; [3.3.0,4.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(symbolicname=org.eclipse.jdt.ui)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))" multiple="false" name="bundle" optional="false">
+      Require Bundle org.eclipse.jdt.ui; [3.3.0,4.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(symbolicname=org.eclipse.core.runtime)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))" multiple="false" name="bundle" optional="false">
+      Require Bundle org.eclipse.core.runtime; [3.2.0,4.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(symbolicname=org.eclipse.jdt.launching)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))" multiple="false" name="bundle" optional="false">
+      Require Bundle org.eclipse.jdt.launching; [3.2.0,4.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(symbolicname=org.eclipse.jdt.debug.ui)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))" multiple="false" name="bundle" optional="false">
+      Require Bundle org.eclipse.jdt.debug.ui; [3.2.0,4.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(symbolicname=org.eclipse.jdt.junit)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))" multiple="false" name="bundle" optional="false">
+      Require Bundle org.eclipse.jdt.junit; [3.2.0,4.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(symbolicname=org.junit)(version&gt;=0.0.0))" multiple="false" name="bundle" optional="false">
+      Require Bundle org.junit; 0.0.0
+    </require>
+    <require extend="false" filter="(&amp;(symbolicname=org.eclipse.osgi.services)(version&gt;=0.0.0))" multiple="false" name="bundle" optional="false">
+      Require Bundle org.eclipse.osgi.services; 0.0.0
+    </require>
+    <require extend="false" filter="(&amp;(symbolicname=org.apache.ant)(version&gt;=0.0.0))" multiple="false" name="bundle" optional="false">
+      Require Bundle org.apache.ant; 0.0.0
+    </require>
+    <require extend="false" filter="(&amp;(symbolicname=org.eclipse.ui.console)(version&gt;=0.0.0))" multiple="false" name="bundle" optional="false">
+      Require Bundle org.eclipse.ui.console; 0.0.0
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.naming)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package javax.naming
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.xml.namespace)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package javax.xml.namespace
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.xml.parsers)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package javax.xml.parsers
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.xml.transform)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package javax.xml.transform
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.xml.transform.dom)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package javax.xml.transform.dom
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.xml.transform.stream)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package javax.xml.transform.stream
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.xml.xpath)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package javax.xml.xpath
+    </require>
+    <require extend="false" filter="(&amp;(package=org.apache.tools.ant)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package org.apache.tools.ant
+    </require>
+    <require extend="false" filter="(&amp;(package=org.apache.tools.ant.types)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package org.apache.tools.ant.types
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.framework)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="false">
+      Import package org.osgi.framework ;version=[1.5.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.packageadmin)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="false">
+      Import package org.osgi.service.packageadmin ;version=[1.2.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.w3c.dom)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package org.w3c.dom
+    </require>
+    <require extend="false" filter="(&amp;(package=org.xml.sax)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package org.xml.sax
+    </require>
+    <require extend="false" filter="(|(ee=J2SE-1.5))" multiple="false" name="ee" optional="false">
+      Execution Environment (|(ee=J2SE-1.5))
+    </require>
+  </resource>
+  <resource id="biz.aQute.bnd/1.43.0" presentationname="bnd" symbolicname="biz.aQute.bnd" uri="repo/biz.aQute.bnd/biz.aQute.bnd-1.43.0.jar" version="1.43.0">
+    <description>
+      A utility and plugin to wrap, build, print, or otherwise manipulate
+       bundles
+    </description>
+    <size>
+      982765
+    </size>
+    <license>
+      http://www.opensource.org/licenses/apache2.0.php; description="All
+       files contained in this JAR are licensed under the Apache
+       2.0 license, unless noted differently in their source (see
+       swing2swt)."; link=LICENSE
+    </license>
+    <copyright>
+      All files contained in this JAR are licensed under the Apache
+       2.0 license, unless noted differently in their source (see
+       swing2swt).
+    </copyright>
+    <capability name="bundle">
+      <p n="manifestversion" v="2"/>
+      <p n="presentationname" v="bnd"/>
+      <p n="symbolicname" v="biz.aQute.bnd"/>
+      <p n="version" t="version" v="1.43.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="aQute.bnd.service"/>
+      <p n="version" t="version" v="1.43.1"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="aQute.bnd.service.action"/>
+      <p n="version" t="version" v="1.43.1"/>
+    </capability>
+    <require extend="false" filter="(&amp;(symbolicname=org.eclipse.ui.ide)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))" multiple="false" name="bundle" optional="false">
+      Require Bundle org.eclipse.ui.ide; [3.3.0,4.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(symbolicname=org.eclipse.jface.text)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))" multiple="false" name="bundle" optional="false">
+      Require Bundle org.eclipse.jface.text; [3.3.0,4.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(symbolicname=org.eclipse.ui.workbench.texteditor)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))" multiple="false" name="bundle" optional="false">
+      Require Bundle org.eclipse.ui.workbench.texteditor; [3.3.0,4.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(symbolicname=org.eclipse.ui.editors)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))" multiple="false" name="bundle" optional="false">
+      Require Bundle org.eclipse.ui.editors; [3.3.0,4.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(symbolicname=org.eclipse.ui)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))" multiple="false" name="bundle" optional="false">
+      Require Bundle org.eclipse.ui; [3.3.0,4.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(symbolicname=org.eclipse.debug.ui)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))" multiple="false" name="bundle" optional="false">
+      Require Bundle org.eclipse.debug.ui; [3.3.0,4.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(symbolicname=org.eclipse.jdt.core)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))" multiple="false" name="bundle" optional="false">
+      Require Bundle org.eclipse.jdt.core; [3.3.0,4.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(symbolicname=org.eclipse.jdt.ui)(version&gt;=3.3.0)(!(version&gt;=4.0.0)))" multiple="false" name="bundle" optional="false">
+      Require Bundle org.eclipse.jdt.ui; [3.3.0,4.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(symbolicname=org.eclipse.core.runtime)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))" multiple="false" name="bundle" optional="false">
+      Require Bundle org.eclipse.core.runtime; [3.2.0,4.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(symbolicname=org.eclipse.jdt.launching)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))" multiple="false" name="bundle" optional="false">
+      Require Bundle org.eclipse.jdt.launching; [3.2.0,4.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(symbolicname=org.eclipse.jdt.debug.ui)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))" multiple="false" name="bundle" optional="false">
+      Require Bundle org.eclipse.jdt.debug.ui; [3.2.0,4.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(symbolicname=org.eclipse.jdt.junit)(version&gt;=3.2.0)(!(version&gt;=4.0.0)))" multiple="false" name="bundle" optional="false">
+      Require Bundle org.eclipse.jdt.junit; [3.2.0,4.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(symbolicname=org.junit)(version&gt;=0.0.0))" multiple="false" name="bundle" optional="false">
+      Require Bundle org.junit; 0.0.0
+    </require>
+    <require extend="false" filter="(&amp;(symbolicname=org.eclipse.osgi.services)(version&gt;=0.0.0))" multiple="false" name="bundle" optional="false">
+      Require Bundle org.eclipse.osgi.services; 0.0.0
+    </require>
+    <require extend="false" filter="(&amp;(symbolicname=org.apache.ant)(version&gt;=0.0.0))" multiple="false" name="bundle" optional="false">
+      Require Bundle org.apache.ant; 0.0.0
+    </require>
+    <require extend="false" filter="(&amp;(symbolicname=org.eclipse.ui.console)(version&gt;=0.0.0))" multiple="false" name="bundle" optional="false">
+      Require Bundle org.eclipse.ui.console; 0.0.0
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.naming)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package javax.naming
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.xml.namespace)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package javax.xml.namespace
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.xml.parsers)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package javax.xml.parsers
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.xml.transform)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package javax.xml.transform
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.xml.transform.dom)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package javax.xml.transform.dom
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.xml.transform.stream)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package javax.xml.transform.stream
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.xml.xpath)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package javax.xml.xpath
+    </require>
+    <require extend="false" filter="(&amp;(package=org.apache.tools.ant)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package org.apache.tools.ant
+    </require>
+    <require extend="false" filter="(&amp;(package=org.apache.tools.ant.types)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package org.apache.tools.ant.types
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.framework)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="false">
+      Import package org.osgi.framework ;version=[1.5.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.packageadmin)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="false">
+      Import package org.osgi.service.packageadmin ;version=[1.2.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.w3c.dom)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package org.w3c.dom
+    </require>
+    <require extend="false" filter="(&amp;(package=org.xml.sax)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package org.xml.sax
+    </require>
+    <require extend="false" filter="(|(ee=J2SE-1.5))" multiple="false" name="ee" optional="false">
+      Execution Environment (|(ee=J2SE-1.5))
+    </require>
+  </resource>
+  <resource id="biz.aQute.bnd.annotation/1.44.0" presentationname="bnd Annotations Library" symbolicname="biz.aQute.bnd.annotation" uri="repo/biz.aQute.bnd.annotation/biz.aQute.bnd.annotation-1.44.0.jar" version="1.44.0">
+    <description>
+      Contains only the annotations for bnd.
+    </description>
+    <size>
+      29118
+    </size>
+    <license>
+      http://www.opensource.org/licenses/apache2.0.php; description="All
+       files contained in this JAR are licensed under the Apache
+       2.0 license, unless noted differently in their source (see
+       swing2swt)."; link=LICENSE
+    </license>
+    <documentation>
+      http://www.aQute.biz/Code/Bnd
+    </documentation>
+    <copyright>
+      All files contained in this JAR are licensed under the Apache
+       2.0 license, unless noted differently in their source (see
+       swing2swt).
+    </copyright>
+    <capability name="bundle">
+      <p n="manifestversion" v="2"/>
+      <p n="presentationname" v="bnd Annotations Library"/>
+      <p n="symbolicname" v="biz.aQute.bnd.annotation"/>
+      <p n="version" t="version" v="1.44.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="aQute.bnd.annotation"/>
+      <p n="version" t="version" v="1.43.1"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="aQute.bnd.annotation.component"/>
+      <p n="version" t="version" v="1.43.1"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="aQute.bnd.annotation.metatype"/>
+      <p n="version" t="version" v="1.43.1"/>
+    </capability>
+  </resource>
+  <resource id="biz.aQute.bnd.annotation/1.43.0" presentationname="bnd Annotations Library" symbolicname="biz.aQute.bnd.annotation" uri="repo/biz.aQute.bnd.annotation/biz.aQute.bnd.annotation-1.43.0.jar" version="1.43.0">
+    <description>
+      Contains only the annotations for bnd.
+    </description>
+    <size>
+      29107
+    </size>
+    <license>
+      http://www.opensource.org/licenses/apache2.0.php; description="All
+       files contained in this JAR are licensed under the Apache
+       2.0 license, unless noted differently in their source (see
+       swing2swt)."; link=LICENSE
+    </license>
+    <documentation>
+      http://www.aQute.biz/Code/Bnd
+    </documentation>
+    <copyright>
+      All files contained in this JAR are licensed under the Apache
+       2.0 license, unless noted differently in their source (see
+       swing2swt).
+    </copyright>
+    <capability name="bundle">
+      <p n="manifestversion" v="2"/>
+      <p n="presentationname" v="bnd Annotations Library"/>
+      <p n="symbolicname" v="biz.aQute.bnd.annotation"/>
+      <p n="version" t="version" v="1.43.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="aQute.bnd.annotation"/>
+      <p n="version" t="version" v="1.43.1"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="aQute.bnd.annotation.component"/>
+      <p n="version" t="version" v="1.43.1"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="aQute.bnd.annotation.metatype"/>
+      <p n="version" t="version" v="1.43.1"/>
+    </capability>
+  </resource>
+  <resource id="biz.aQute.bndlib/1.44.0" presentationname="aQute Bundle Tool Library" symbolicname="biz.aQute.bndlib" uri="repo/biz.aQute.bndlib/biz.aQute.bndlib-1.44.0.jar" version="1.44.0">
+    <description>
+      A library for manipulating and generating bundles
+    </description>
+    <size>
+      775301
+    </size>
+    <license>
+      http://www.opensource.org/licenses/apache2.0.php; description="All
+       files contained in this JAR are licensed under the Apache
+       2.0 license, unless noted differently in their source (see
+       swing2swt)."; link=LICENSE
+    </license>
+    <documentation>
+      http://www.aQute.biz/Code/Bnd
+    </documentation>
+    <copyright>
+      All files contained in this JAR are licensed under the Apache
+       2.0 license, unless noted differently in their source (see
+       swing2swt).
+    </copyright>
+    <capability name="bundle">
+      <p n="manifestversion" v="2"/>
+      <p n="presentationname" v="aQute Bundle Tool Library"/>
+      <p n="symbolicname" v="biz.aQute.bndlib"/>
+      <p n="version" t="version" v="1.44.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="aQute.bnd.annotation"/>
+      <p n="version" t="version" v="1.43.1"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="aQute.bnd.annotation.metatype"/>
+      <p n="version" t="version" v="1.43.1"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="aQute.bnd.annotation.component"/>
+      <p n="version" t="version" v="1.43.1"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="aQute.lib.osgi"/>
+      <p n="uses" v="aQute.bnd.annotation,aQute.libg.version,aQute.bnd.service,aQute.bnd.annotation.metatype,aQute.libg.reporter,aQute.libg.sed,aQute.libg.header,aQute.libg.qtokens"/>
+      <p n="version" t="version" v="1.43.1"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="aQute.bnd.build"/>
+      <p n="uses" v="aQute.bnd.service,aQute.lib.osgi,aQute.libg.reporter,aQute.libg.header,aQute.bnd.service.action,aQute.libg.sed,javax.naming"/>
+      <p n="version" t="version" v="1.43.1"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="aQute.bnd.service"/>
+      <p n="uses" v="aQute.lib.osgi,aQute.bnd.build,aQute.libg.reporter,aQute.libg.version"/>
+      <p n="version" t="version" v="1.44.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="aQute.bnd.service.action"/>
+      <p n="uses" v="aQute.bnd.build"/>
+      <p n="version" t="version" v="1.43.1"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="aQute.libg.reporter"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="aQute.libg.version"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="aQute.libg.sed"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="aQute.libg.header"/>
+      <p n="uses" v="aQute.libg.reporter,aQute.libg.qtokens"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="aQute.libg.qtokens"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <require extend="false" filter="(&amp;(package=javax.naming)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package javax.naming
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.xml.namespace)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package javax.xml.namespace
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.xml.parsers)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package javax.xml.parsers
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.xml.transform)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package javax.xml.transform
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.xml.transform.stream)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package javax.xml.transform.stream
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.xml.xpath)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package javax.xml.xpath
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.framework)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="false">
+      Import package org.osgi.framework ;version=[1.5.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.w3c.dom)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package org.w3c.dom
+    </require>
+    <require extend="false" filter="(&amp;(package=org.xml.sax)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package org.xml.sax
+    </require>
+    <require extend="false" filter="(&amp;(package=org.xml.sax.helpers)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package org.xml.sax.helpers
+    </require>
+    <require extend="false" filter="(|(ee=J2SE-1.5))" multiple="false" name="ee" optional="false">
+      Execution Environment (|(ee=J2SE-1.5))
+    </require>
+  </resource>
+  <resource id="biz.aQute.bndlib/1.43.0" presentationname="aQute Bundle Tool Library" symbolicname="biz.aQute.bndlib" uri="repo/biz.aQute.bndlib/biz.aQute.bndlib-1.43.0.jar" version="1.43.0">
+    <description>
+      A library for manipulating and generating bundles
+    </description>
+    <size>
+      696743
+    </size>
+    <license>
+      http://www.opensource.org/licenses/apache2.0.php; description="All
+       files contained in this JAR are licensed under the Apache
+       2.0 license, unless noted differently in their source (see
+       swing2swt)."; link=LICENSE
+    </license>
+    <documentation>
+      http://www.aQute.biz/Code/Bnd
+    </documentation>
+    <copyright>
+      All files contained in this JAR are licensed under the Apache
+       2.0 license, unless noted differently in their source (see
+       swing2swt).
+    </copyright>
+    <capability name="bundle">
+      <p n="manifestversion" v="2"/>
+      <p n="presentationname" v="aQute Bundle Tool Library"/>
+      <p n="symbolicname" v="biz.aQute.bndlib"/>
+      <p n="version" t="version" v="1.43.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="aQute.bnd.annotation"/>
+      <p n="version" t="version" v="1.43.1"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="aQute.bnd.annotation.metatype"/>
+      <p n="version" t="version" v="1.43.1"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="aQute.bnd.annotation.component"/>
+      <p n="version" t="version" v="1.43.1"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="aQute.lib.osgi"/>
+      <p n="uses" v="aQute.bnd.annotation,aQute.libg.version,aQute.bnd.service,aQute.bnd.annotation.metatype,aQute.libg.reporter,aQute.libg.sed"/>
+      <p n="version" t="version" v="1.43.1"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="aQute.bnd.build"/>
+      <p n="uses" v="aQute.lib.osgi,aQute.libg.reporter,aQute.bnd.service,aQute.bnd.service.action,aQute.libg.sed,javax.naming"/>
+      <p n="version" t="version" v="1.43.1"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="aQute.bnd.service"/>
+      <p n="uses" v="aQute.lib.osgi,aQute.bnd.build,aQute.libg.reporter,aQute.libg.version"/>
+      <p n="version" t="version" v="1.43.1"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="aQute.bnd.service.action"/>
+      <p n="uses" v="aQute.bnd.build"/>
+      <p n="version" t="version" v="1.43.1"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="aQute.libg.reporter"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="aQute.libg.version"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="aQute.libg.sed"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <require extend="false" filter="(&amp;(package=javax.naming)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package javax.naming
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.xml.namespace)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package javax.xml.namespace
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.xml.parsers)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package javax.xml.parsers
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.xml.transform)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package javax.xml.transform
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.xml.transform.stream)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package javax.xml.transform.stream
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.xml.xpath)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package javax.xml.xpath
+    </require>
+    <require extend="false" filter="(&amp;(package=org.w3c.dom)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package org.w3c.dom
+    </require>
+    <require extend="false" filter="(&amp;(package=org.xml.sax)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package org.xml.sax
+    </require>
+    <require extend="false" filter="(|(ee=J2SE-1.5))" multiple="false" name="ee" optional="false">
+      Execution Environment (|(ee=J2SE-1.5))
+    </require>
+  </resource>
+  <resource id="biz.aQute.junit/1.0.0" presentationname="biz.aQute.junit" symbolicname="biz.aQute.junit" uri="repo/biz.aQute.junit/biz.aQute.junit-1.0.0.jar" version="1.0.0">
+    <size>
+      66501
+    </size>
+    <license>
+      http://www.opensource.org/licenses/apache2.0.php; description="All
+       files contained in this JAR are licensed under the Apache
+       2.0 license, unless noted differently in their source (see
+       swing2swt)."; link=LICENSE
+    </license>
+    <copyright>
+      All files contained in this JAR are licensed under the Apache
+       2.0 license, unless noted differently in their source (see
+       swing2swt).
+    </copyright>
+    <capability name="bundle">
+      <p n="manifestversion" v="2"/>
+      <p n="presentationname" v="biz.aQute.junit"/>
+      <p n="symbolicname" v="biz.aQute.junit"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="junit.framework"/>
+      <p n="version" t="version" v="3.8.0"/>
+    </capability>
+    <require extend="false" filter="(&amp;(package=junit.framework)(version&gt;=3.8.0)(!(version&gt;=4.0.0)))" multiple="false" name="package" optional="false">
+      Import package junit.framework ;version=[3.8.0,4.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.framework)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="false">
+      Import package org.osgi.framework ;version=[1.5.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.util.tracker)(version&gt;=1.4.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="false">
+      Import package org.osgi.util.tracker ;version=[1.4.0,2.0.0)
+    </require>
+  </resource>
+  <resource id="biz.aQute.launcher/1.0.0" presentationname="biz.aQute.launcher" symbolicname="biz.aQute.launcher" uri="repo/biz.aQute.launcher/biz.aQute.launcher-1.0.0.jar" version="1.0.0">
+    <size>
+      56019
+    </size>
+    <license>
+      http://www.opensource.org/licenses/apache2.0.php; description="All
+       files contained in this JAR are licensed under the Apache
+       2.0 license, unless noted differently in their source (see
+       swing2swt)."; link=LICENSE
+    </license>
+    <copyright>
+      All files contained in this JAR are licensed under the Apache
+       2.0 license, unless noted differently in their source (see
+       swing2swt).
+    </copyright>
+    <capability name="bundle">
+      <p n="manifestversion" v="2"/>
+      <p n="presentationname" v="biz.aQute.launcher"/>
+      <p n="symbolicname" v="biz.aQute.launcher"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <require extend="false" filter="(&amp;(package=aQute.bnd.build)(version&gt;=1.43.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="false">
+      Import package aQute.bnd.build ;version=[1.43.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=aQute.bnd.service)(version&gt;=1.44.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="false">
+      Import package aQute.bnd.service ;version=[1.44.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=aQute.lib.io)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="false">
+      Import package aQute.lib.io ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=aQute.lib.osgi)(version&gt;=1.43.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="false">
+      Import package aQute.lib.osgi ;version=[1.43.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=aQute.libg.generics)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="false">
+      Import package aQute.libg.generics ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.framework)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="false">
+      Import package org.osgi.framework ;version=[1.5.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.framework.launch)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="false">
+      Import package org.osgi.framework.launch ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.packageadmin)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="false">
+      Import package org.osgi.service.packageadmin ;version=[1.2.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.permissionadmin)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="false">
+      Import package org.osgi.service.permissionadmin ;version=[1.2.0,2.0.0)
+    </require>
+  </resource>
+  <resource id="bndtools.runtime.eclipse.applaunch/0.1.0" presentationname="bndtools.runtime.eclipse.applaunch" symbolicname="bndtools.runtime.eclipse.applaunch" uri="repo/bndtools.runtime.eclipse.applaunch/bndtools.runtime.eclipse.applaunch-0.1.0.jar" version="0.1.0">
+    <size>
+      14079
+    </size>
+    <license>
+      http://www.opensource.org/licenses/eclipse-1.0.php
+    </license>
+    <capability name="bundle">
+      <p n="manifestversion" v="2"/>
+      <p n="presentationname" v="bndtools.runtime.eclipse.applaunch"/>
+      <p n="symbolicname" v="bndtools.runtime.eclipse.applaunch"/>
+      <p n="version" t="version" v="0.1.0"/>
+    </capability>
+    <require extend="false" filter="(&amp;(package=org.eclipse.osgi.service.runnable)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="false">
+      Import package org.eclipse.osgi.service.runnable ;version=[1.1.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.framework)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="false">
+      Import package org.osgi.framework ;version=[1.5.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.util.tracker)(version&gt;=1.4.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="false">
+      Import package org.osgi.util.tracker ;version=[1.4.0,2.0.0)
+    </require>
+  </resource>
+  <resource id="ee.minimum/1.2.0.200908310645" presentationname="ee.minimum" symbolicname="ee.minimum" uri="repo/ee.minimum/ee.minimum-1.2.0.jar" version="1.2.0.200908310645">
+    <description>
+      Contains the OSGi minimum execution environment stubbed classes
+       and sources
+    </description>
+    <size>
+      614671
+    </size>
+    <copyright>
+      Copyright (c) OSGi Alliance (2000, 2009). All Rights Reserved.
+    </copyright>
+    <capability name="bundle">
+      <p n="manifestversion" v="2"/>
+      <p n="presentationname" v="ee.minimum"/>
+      <p n="symbolicname" v="ee.minimum"/>
+      <p n="version" t="version" v="1.2.0.200908310645"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="java.security.interfaces"/>
+      <p n="version" t="version" v="0.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="java.lang"/>
+      <p n="version" t="version" v="0.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="java.net"/>
+      <p n="version" t="version" v="0.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="java.security"/>
+      <p n="version" t="version" v="0.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="java.text"/>
+      <p n="version" t="version" v="0.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="java.security.spec"/>
+      <p n="version" t="version" v="0.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="java.security.acl"/>
+      <p n="version" t="version" v="0.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="java.lang.reflect"/>
+      <p n="version" t="version" v="0.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="java.util"/>
+      <p n="version" t="version" v="0.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="java.lang.ref"/>
+      <p n="version" t="version" v="0.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="java.security.cert"/>
+      <p n="uses" v="javax.security.auth.x500"/>
+      <p n="version" t="version" v="0.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="java.io"/>
+      <p n="version" t="version" v="0.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="java.util.zip"/>
+      <p n="version" t="version" v="0.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="java.math"/>
+      <p n="version" t="version" v="0.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="java.util.jar"/>
+      <p n="version" t="version" v="0.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="javax.security.auth.x500"/>
+      <p n="version" t="version" v="0.0.0"/>
+    </capability>
+    <require extend="false" filter="(&amp;(package=javax.security.auth.x500)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package javax.security.auth.x500
+    </require>
+    <require extend="false" filter="(|(ee=OSGi/Minimum-1.2))" multiple="false" name="ee" optional="false">
+      Execution Environment (|(ee=OSGi/Minimum-1.2))
+    </require>
+  </resource>
+  <resource id="javax.servlet/2.5.0.v200910301333" presentationname="Servlet API Bundle" symbolicname="javax.servlet" uri="repo/javax.servlet/javax.servlet-2.5.0.jar" version="2.5.0.v200910301333">
+    <size>
+      118865
+    </size>
+    <capability name="bundle">
+      <p n="manifestversion" v="2"/>
+      <p n="presentationname" v="Servlet API Bundle"/>
+      <p n="symbolicname" v="javax.servlet"/>
+      <p n="version" t="version" v="2.5.0.v200910301333"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="javax.servlet"/>
+      <p n="version" t="version" v="2.5.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="javax.servlet.http"/>
+      <p n="version" t="version" v="2.5.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="javax.servlet.resources"/>
+      <p n="version" t="version" v="2.5.0"/>
+    </capability>
+    <require extend="false" filter="(|(ee=CDC-1.1/Foundation-1.1)(ee=J2SE-1.4))" multiple="false" name="ee" optional="false">
+      Execution Environment (|(ee=CDC-1.1/Foundation-1.1)(ee=J2SE-1.4))
+    </require>
+  </resource>
+  <resource id="junit.osgi/3.8.2" presentationname="junit.osgi" symbolicname="junit.osgi" uri="repo/junit.osgi/junit.osgi-3.8.2.jar" version="3.8.2">
+    <size>
+      123147
+    </size>
+    <capability name="bundle">
+      <p n="manifestversion" v="2"/>
+      <p n="presentationname" v="junit.osgi"/>
+      <p n="symbolicname" v="junit.osgi"/>
+      <p n="version" t="version" v="3.8.2"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="junit.swingui.icons"/>
+      <p n="version" t="version" v="3.8.2"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="junit.swingui"/>
+      <p n="uses" v="javax.swing,junit.runner,javax.swing.border,junit.framework,javax.swing.event,javax.swing.tree,junit.extensions"/>
+      <p n="version" t="version" v="3.8.2"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="junit.framework"/>
+      <p n="version" t="version" v="3.8.2"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="junit.runner"/>
+      <p n="uses" v="junit.framework"/>
+      <p n="version" t="version" v="3.8.2"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="junit.awtui"/>
+      <p n="uses" v="junit.runner,junit.framework"/>
+      <p n="version" t="version" v="3.8.2"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="junit.textui"/>
+      <p n="uses" v="junit.framework,junit.runner"/>
+      <p n="version" t="version" v="3.8.2"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="junit.extensions"/>
+      <p n="uses" v="junit.framework"/>
+      <p n="version" t="version" v="3.8.2"/>
+    </capability>
+    <require extend="false" filter="(&amp;(package=javax.swing)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package javax.swing
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.swing.border)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package javax.swing.border
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.swing.event)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package javax.swing.event
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.swing.tree)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package javax.swing.tree
+    </require>
+    <require extend="false" filter="(&amp;(package=junit.awtui)(version&gt;=3.8.0)(!(version&gt;=4.0.0)))" multiple="false" name="package" optional="false">
+      Import package junit.awtui ;version=[3.8.0,4.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=junit.extensions)(version&gt;=3.8.0)(!(version&gt;=4.0.0)))" multiple="false" name="package" optional="false">
+      Import package junit.extensions ;version=[3.8.0,4.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=junit.framework)(version&gt;=3.8.0)(!(version&gt;=4.0.0)))" multiple="false" name="package" optional="false">
+      Import package junit.framework ;version=[3.8.0,4.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=junit.runner)(version&gt;=3.8.0)(!(version&gt;=4.0.0)))" multiple="false" name="package" optional="false">
+      Import package junit.runner ;version=[3.8.0,4.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=junit.swingui)(version&gt;=3.8.0)(!(version&gt;=4.0.0)))" multiple="false" name="package" optional="false">
+      Import package junit.swingui ;version=[3.8.0,4.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=junit.swingui.icons)(version&gt;=3.8.0)(!(version&gt;=4.0.0)))" multiple="false" name="package" optional="false">
+      Import package junit.swingui.icons ;version=[3.8.0,4.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=junit.textui)(version&gt;=3.8.0)(!(version&gt;=4.0.0)))" multiple="false" name="package" optional="false">
+      Import package junit.textui ;version=[3.8.0,4.0.0)
+    </require>
+  </resource>
+  <resource id="org.apache.felix.configadmin/1.2.8" presentationname="Apache Felix Configuration Admin Service" symbolicname="org.apache.felix.configadmin" uri="repo/org.apache.felix.configadmin/org.apache.felix.configadmin-1.2.8.jar" version="1.2.8">
+    <description>
+      Implementation of the OSGi Configuration Admin Service Specification
+       1.2
+    </description>
+    <size>
+      94680
+    </size>
+    <license>
+      http://www.apache.org/licenses/LICENSE-2.0.txt
+    </license>
+    <documentation>
+      http://www.apache.org/
+    </documentation>
+    <category id="osgi"/>
+    <capability name="bundle">
+      <p n="manifestversion" v="2"/>
+      <p n="presentationname" v="Apache Felix Configuration Admin Service"/>
+      <p n="symbolicname" v="org.apache.felix.configadmin"/>
+      <p n="version" t="version" v="1.2.8"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.apache.felix.cm"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.apache.felix.cm.file"/>
+      <p n="uses" v="org.apache.felix.cm,org.osgi.framework"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.cm"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.3.0"/>
+    </capability>
+    <require extend="false" filter="(&amp;(package=org.apache.felix.cm)(version&gt;=1.0.0)(!(version&gt;=1.1.0)))" multiple="false" name="package" optional="false">
+      Import package org.apache.felix.cm ;version=[1.0.0,1.1.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.apache.felix.cm.file)(version&gt;=1.0.0)(!(version&gt;=1.1.0)))" multiple="false" name="package" optional="false">
+      Import package org.apache.felix.cm.file ;version=[1.0.0,1.1.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.framework)(version&gt;=1.3.0))" multiple="false" name="package" optional="false">
+      Import package org.osgi.framework ;version=1.3.0
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.cm)(version&gt;=1.3.0)(!(version&gt;=1.4.0)))" multiple="false" name="package" optional="false">
+      Import package org.osgi.service.cm ;version=[1.3.0,1.4.0)
+    </require>
+  </resource>
+  <resource id="org.apache.felix.framework/3.0.4" presentationname="Apache Felix Framework" symbolicname="org.apache.felix.framework" uri="repo/org.apache.felix.framework/org.apache.felix.framework-3.0.4.jar" version="3.0.4">
+    <description>
+      OSGi R4 framework implementation.
+    </description>
+    <size>
+      387118
+    </size>
+    <license>
+      http://www.apache.org/licenses/LICENSE-2.0.txt
+    </license>
+    <documentation>
+      http://www.apache.org/
+    </documentation>
+    <capability name="bundle">
+      <p n="manifestversion" v="2"/>
+      <p n="presentationname" v="Apache Felix Framework"/>
+      <p n="symbolicname" v="org.apache.felix.framework"/>
+      <p n="version" t="version" v="3.0.4"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.startlevel"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.1.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.framework.launch"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.util.tracker"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.4.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.url"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.5.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.packageadmin"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.2.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.framework.hooks.service"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+  </resource>
+  <resource id="org.apache.felix.framework/3.2.2" presentationname="Apache Felix Framework" symbolicname="org.apache.felix.framework" uri="repo/org.apache.felix.framework/org.apache.felix.framework-3.2.2.jar" version="3.2.2">
+    <description>
+      OSGi R4 framework implementation.
+    </description>
+    <size>
+      404203
+    </size>
+    <license>
+      http://www.apache.org/licenses/LICENSE-2.0.txt
+    </license>
+    <documentation>
+      http://www.apache.org/
+    </documentation>
+    <capability name="bundle">
+      <p n="manifestversion" v="2"/>
+      <p n="presentationname" v="Apache Felix Framework"/>
+      <p n="symbolicname" v="org.apache.felix.framework"/>
+      <p n="version" t="version" v="3.2.2"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.startlevel"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.1.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.framework.launch"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.util.tracker"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.4.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.url"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.5.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.packageadmin"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.2.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.framework.hooks.service"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+  </resource>
+  <resource id="org.apache.felix.http.jetty/2.0.4" presentationname="Apache Felix Http Jetty" symbolicname="org.apache.felix.http.jetty" uri="repo/org.apache.felix.http.jetty/org.apache.felix.http.jetty-2.0.4.jar" version="2.0.4">
+    <description>
+      Apache Felix is an OSGi implementation.
+    </description>
+    <size>
+      921199
+    </size>
+    <license>
+      http://www.apache.org/licenses/LICENSE-2.0.txt
+    </license>
+    <documentation>
+      http://www.apache.org/
+    </documentation>
+    <capability name="bundle">
+      <p n="manifestversion" v="2"/>
+      <p n="presentationname" v="Apache Felix Http Jetty"/>
+      <p n="symbolicname" v="org.apache.felix.http.jetty"/>
+      <p n="version" t="version" v="2.0.4"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.apache.felix.http.api"/>
+      <p n="uses" v="javax.servlet,org.osgi.service.http"/>
+      <p n="version" t="version" v="2.0.4"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.http"/>
+      <p n="uses" v="javax.servlet.http,javax.servlet"/>
+      <p n="version" t="version" v="1.2.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="javax.servlet.resources"/>
+      <p n="version" t="version" v="2.5.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="javax.servlet"/>
+      <p n="version" t="version" v="2.5.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="javax.servlet.jsp.resources"/>
+      <p n="version" t="version" v="2.5.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="javax.servlet.http"/>
+      <p n="uses" v="javax.servlet"/>
+      <p n="version" t="version" v="2.5.0"/>
+    </capability>
+    <require extend="false" filter="(&amp;(package=javax.net.ssl)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package javax.net.ssl
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.security.cert)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package javax.security.cert
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.servlet)(version&gt;=2.5.0))" multiple="false" name="package" optional="true">
+      Import package javax.servlet ;version=2.5.0
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.servlet.http)(version&gt;=2.5.0))" multiple="false" name="package" optional="true">
+      Import package javax.servlet.http ;version=2.5.0
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.servlet.jsp.resources)(version&gt;=2.5.0))" multiple="false" name="package" optional="true">
+      Import package javax.servlet.jsp.resources ;version=2.5.0
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.servlet.resources)(version&gt;=2.5.0))" multiple="false" name="package" optional="true">
+      Import package javax.servlet.resources ;version=2.5.0
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.xml.parsers)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package javax.xml.parsers
+    </require>
+    <require extend="false" filter="(&amp;(package=org.apache.felix.http.api)(version&gt;=2.0.0))" multiple="false" name="package" optional="true">
+      Import package org.apache.felix.http.api ;version=2.0.0
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.framework)(version&gt;=1.3.0))" multiple="false" name="package" optional="true">
+      Import package org.osgi.framework ;version=1.3.0
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.cm)(version&gt;=1.2.0))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.cm ;version=1.2.0
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.http)(version&gt;=1.2.0))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.http ;version=1.2.0
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.log)(version&gt;=1.3.0))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.log ;version=1.3.0
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.util.tracker)(version&gt;=1.3.0))" multiple="false" name="package" optional="true">
+      Import package org.osgi.util.tracker ;version=1.3.0
+    </require>
+    <require extend="false" filter="(&amp;(package=org.slf4j)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package org.slf4j
+    </require>
+    <require extend="false" filter="(&amp;(package=org.xml.sax)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package org.xml.sax
+    </require>
+    <require extend="false" filter="(&amp;(package=org.xml.sax.helpers)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package org.xml.sax.helpers
+    </require>
+  </resource>
+  <resource id="org.apache.felix.http.jetty/2.2.0" presentationname="Apache Felix Http Jetty" symbolicname="org.apache.felix.http.jetty" uri="repo/org.apache.felix.http.jetty/org.apache.felix.http.jetty-2.2.0.jar" version="2.2.0">
+    <description>
+      Apache Felix is an OSGi implementation.
+    </description>
+    <size>
+      941708
+    </size>
+    <license>
+      http://www.apache.org/licenses/LICENSE-2.0.txt
+    </license>
+    <documentation>
+      http://www.apache.org/
+    </documentation>
+    <capability name="bundle">
+      <p n="manifestversion" v="2"/>
+      <p n="presentationname" v="Apache Felix Http Jetty"/>
+      <p n="symbolicname" v="org.apache.felix.http.jetty"/>
+      <p n="version" t="version" v="2.2.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.apache.felix.http.api"/>
+      <p n="uses" v="javax.servlet,org.osgi.service.http"/>
+      <p n="version" t="version" v="2.0.4"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.http"/>
+      <p n="uses" v="javax.servlet.http,javax.servlet"/>
+      <p n="version" t="version" v="1.2.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="javax.servlet.resources"/>
+      <p n="version" t="version" v="2.5.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="javax.servlet"/>
+      <p n="version" t="version" v="2.5.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="javax.servlet.jsp.resources"/>
+      <p n="version" t="version" v="2.5.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="javax.servlet.http"/>
+      <p n="uses" v="javax.servlet"/>
+      <p n="version" t="version" v="2.5.0"/>
+    </capability>
+    <require extend="false" filter="(&amp;(package=javax.net.ssl)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package javax.net.ssl
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.security.cert)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package javax.security.cert
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.servlet)(version&gt;=2.5.0))" multiple="false" name="package" optional="true">
+      Import package javax.servlet ;version=2.5.0
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.servlet.http)(version&gt;=2.5.0))" multiple="false" name="package" optional="true">
+      Import package javax.servlet.http ;version=2.5.0
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.servlet.jsp.resources)(version&gt;=2.5.0))" multiple="false" name="package" optional="true">
+      Import package javax.servlet.jsp.resources ;version=2.5.0
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.servlet.resources)(version&gt;=2.5.0))" multiple="false" name="package" optional="true">
+      Import package javax.servlet.resources ;version=2.5.0
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.xml.parsers)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package javax.xml.parsers
+    </require>
+    <require extend="false" filter="(&amp;(package=org.apache.felix.http.api)(version&gt;=2.0.0))" multiple="false" name="package" optional="true">
+      Import package org.apache.felix.http.api ;version=2.0.0
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.framework)(version&gt;=1.3.0))" multiple="false" name="package" optional="true">
+      Import package org.osgi.framework ;version=1.3.0
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.http)(version&gt;=1.2.0))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.http ;version=1.2.0
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.log)(version&gt;=1.3.0))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.log ;version=1.3.0
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.util.tracker)(version&gt;=1.3.0))" multiple="false" name="package" optional="true">
+      Import package org.osgi.util.tracker ;version=1.3.0
+    </require>
+    <require extend="false" filter="(&amp;(package=org.slf4j)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package org.slf4j
+    </require>
+    <require extend="false" filter="(&amp;(package=org.xml.sax)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package org.xml.sax
+    </require>
+    <require extend="false" filter="(&amp;(package=org.xml.sax.helpers)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package org.xml.sax.helpers
+    </require>
+  </resource>
+  <resource id="org.apache.felix.log/1.0.0" presentationname="Apache Felix Log Service" symbolicname="org.apache.felix.log" uri="repo/org.apache.felix.log/org.apache.felix.log-1.0.0.jar" version="1.0.0">
+    <description>
+      A simple implementation of the OSGi R4 Log service.
+    </description>
+    <size>
+      22283
+    </size>
+    <license>
+      http://www.apache.org/licenses/LICENSE-2.0.txt
+    </license>
+    <documentation>
+      http://www.apache.org/
+    </documentation>
+    <capability name="service">
+      <p n="service" v="org.osgi.service.log.LogService"/>
+    </capability>
+    <capability name="service">
+      <p n="service" v="org.osgi.service.log.LogReaderService"/>
+    </capability>
+    <capability name="bundle">
+      <p n="manifestversion" v="2"/>
+      <p n="presentationname" v="Apache Felix Log Service"/>
+      <p n="symbolicname" v="org.apache.felix.log"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.log"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.3.0"/>
+    </capability>
+    <require extend="false" filter="(&amp;(package=org.osgi.framework)(version&gt;=1.4.0))" multiple="false" name="package" optional="false">
+      Import package org.osgi.framework ;version=1.4.0
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.log)(version&gt;=1.3.0))" multiple="false" name="package" optional="false">
+      Import package org.osgi.service.log ;version=1.3.0
+    </require>
+  </resource>
+  <resource id="org.apache.felix.log/1.0.1" presentationname="Apache Felix Log Service" symbolicname="org.apache.felix.log" uri="repo/org.apache.felix.log/org.apache.felix.log-1.0.1.jar" version="1.0.1">
+    <description>
+      A simple implementation of the OSGi R4 Log service.
+    </description>
+    <size>
+      22235
+    </size>
+    <license>
+      http://www.apache.org/licenses/LICENSE-2.0.txt
+    </license>
+    <documentation>
+      http://www.apache.org/
+    </documentation>
+    <capability name="service">
+      <p n="service" v="org.osgi.service.log.LogService"/>
+    </capability>
+    <capability name="service">
+      <p n="service" v="org.osgi.service.log.LogReaderService"/>
+    </capability>
+    <capability name="bundle">
+      <p n="manifestversion" v="2"/>
+      <p n="presentationname" v="Apache Felix Log Service"/>
+      <p n="symbolicname" v="org.apache.felix.log"/>
+      <p n="version" t="version" v="1.0.1"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.log"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.3.0"/>
+    </capability>
+    <require extend="false" filter="(&amp;(package=org.osgi.framework)(version&gt;=1.4.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="false">
+      Import package org.osgi.framework ;version=[1.4.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.log)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="false">
+      Import package org.osgi.service.log ;version=[1.3.0,2.0.0)
+    </require>
+  </resource>
+  <resource id="org.apache.felix.metatype/1.0.4" presentationname="Apache Felix Metatype Service" symbolicname="org.apache.felix.metatype" uri="repo/org.apache.felix.metatype/org.apache.felix.metatype-1.0.4.jar" version="1.0.4">
+    <description>
+      Implementation of the OSGi Metatype Service Specification 1.1
+    </description>
+    <size>
+      93982
+    </size>
+    <license>
+      http://www.apache.org/licenses/LICENSE-2.0.txt
+    </license>
+    <documentation>
+      http://felix.apache.org/site/apache-felix-metatype-service.html
+    </documentation>
+    <category id="osgi"/>
+    <capability name="bundle">
+      <p n="manifestversion" v="2"/>
+      <p n="presentationname" v="Apache Felix Metatype Service"/>
+      <p n="symbolicname" v="org.apache.felix.metatype"/>
+      <p n="version" t="version" v="1.0.4"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.apache.felix.metatype"/>
+      <p n="uses" v="org.osgi.service.metatype,org.osgi.framework"/>
+      <p n="version" t="version" v="1.0.4"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.metatype"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.1.0"/>
+    </capability>
+    <require extend="false" filter="(&amp;(package=org.apache.felix.metatype)(version&gt;=1.0.0))" multiple="false" name="package" optional="false">
+      Import package org.apache.felix.metatype ;version=1.0.0
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.framework)(version&gt;=1.3.0))" multiple="false" name="package" optional="false">
+      Import package org.osgi.framework ;version=1.3.0
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.log)(version&gt;=1.3.0))" multiple="false" name="package" optional="false">
+      Import package org.osgi.service.log ;version=1.3.0
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.metatype)(version&gt;=1.1.0))" multiple="false" name="package" optional="false">
+      Import package org.osgi.service.metatype ;version=1.1.0
+    </require>
+  </resource>
+  <resource id="org.apache.felix.scr/1.4.0" presentationname="Apache Felix Declarative Services" symbolicname="org.apache.felix.scr" uri="repo/org.apache.felix.scr/org.apache.felix.scr-1.4.0.jar" version="1.4.0">
+    <description>
+      Implementation of the Declarative Services specification 1.0
+    </description>
+    <size>
+      185410
+    </size>
+    <license>
+      http://www.apache.org/licenses/LICENSE-2.0.txt
+    </license>
+    <documentation>
+      http://felix.apache.org/site/apache-felix-service-component-runtime.html
+    </documentation>
+    <capability name="bundle">
+      <p n="manifestversion" v="2"/>
+      <p n="presentationname" v="Apache Felix Declarative Services"/>
+      <p n="symbolicname" v="org.apache.felix.scr"/>
+      <p n="version" t="version" v="1.4.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.apache.felix.scr"/>
+      <p n="uses" v="org.osgi.framework,org.osgi.service.component"/>
+      <p n="version" t="version" v="1.4.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.component"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.1.0"/>
+    </capability>
+    <require extend="false" filter="(&amp;(package=org.apache.felix.shell)(version&gt;=1.0.0))" multiple="false" name="package" optional="true">
+      Import package org.apache.felix.shell ;version=1.0.0
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.framework)(version&gt;=1.4.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="false">
+      Import package org.osgi.framework ;version=[1.4.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.cm)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.cm ;version=[1.2.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.component)(version&gt;=1.1.0)(!(version&gt;=1.2.0)))" multiple="false" name="package" optional="false">
+      Import package org.osgi.service.component ;version=[1.1.0,1.2.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.log)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.log ;version=[1.3.0,2.0.0)
+    </require>
+  </resource>
+  <resource id="org.apache.felix.scr/1.6.0" presentationname="Apache Felix Declarative Services" symbolicname="org.apache.felix.scr" uri="repo/org.apache.felix.scr/org.apache.felix.scr-1.6.0.jar" version="1.6.0">
+    <description>
+      Implementation of the Declarative Services specification 1.1
+    </description>
+    <size>
+      192360
+    </size>
+    <license>
+      http://www.apache.org/licenses/LICENSE-2.0.txt
+    </license>
+    <documentation>
+      http://felix.apache.org/site/apache-felix-service-component-runtime.html
+    </documentation>
+    <capability name="bundle">
+      <p n="manifestversion" v="2"/>
+      <p n="presentationname" v="Apache Felix Declarative Services"/>
+      <p n="symbolicname" v="org.apache.felix.scr"/>
+      <p n="version" t="version" v="1.6.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.apache.felix.scr"/>
+      <p n="uses" v="org.osgi.framework,org.osgi.service.component"/>
+      <p n="version" t="version" v="1.6.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.component"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.1.0"/>
+    </capability>
+    <require extend="false" filter="(&amp;(package=org.apache.felix.shell)(version&gt;=1.0.0))" multiple="false" name="package" optional="true">
+      Import package org.apache.felix.shell ;version=1.0.0
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.framework)(version&gt;=1.4.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="false">
+      Import package org.osgi.framework ;version=[1.4.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.cm)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.cm ;version=[1.2.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.component)(version&gt;=1.1.0)(!(version&gt;=1.2.0)))" multiple="false" name="package" optional="false">
+      Import package org.osgi.service.component ;version=[1.1.0,1.2.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.log)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.log ;version=[1.3.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.metatype)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.metatype ;version=[1.1.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.packageadmin)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.packageadmin ;version=[1.2.0,2.0.0)
+    </require>
+  </resource>
+  <resource id="org.apache.felix.shell/1.4.2" presentationname="Apache Felix Shell Service" symbolicname="org.apache.felix.shell" uri="repo/org.apache.felix.shell/org.apache.felix.shell-1.4.2.jar" version="1.4.2">
+    <description>
+      A simple OSGi command shell service.
+    </description>
+    <size>
+      62719
+    </size>
+    <license>
+      http://www.apache.org/licenses/LICENSE-2.0.txt
+    </license>
+    <documentation>
+      http://www.apache.org/
+    </documentation>
+    <capability name="service">
+      <p n="service" v="org.apache.felix.shell.ShellService"/>
+    </capability>
+    <capability name="service">
+      <p n="service" v="org.ungoverned.osgi.service.shell.ShellService"/>
+    </capability>
+    <capability name="bundle">
+      <p n="manifestversion" v="2"/>
+      <p n="presentationname" v="Apache Felix Shell Service"/>
+      <p n="symbolicname" v="org.apache.felix.shell"/>
+      <p n="version" t="version" v="1.4.2"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.ungoverned.osgi.service.shell"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.log"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.3.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.apache.felix.shell"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <require extend="false" filter="(service=org.osgi.service.startlevel.StartLevel)" multiple="true" name="service" optional="false">
+      Import Service org.osgi.service.startlevel.StartLevel
+    </require>
+    <require extend="false" filter="(service=org.osgi.service.packageadmin.PackageAdmin)" multiple="true" name="service" optional="false">
+      Import Service org.osgi.service.packageadmin.PackageAdmin
+    </require>
+    <require extend="false" filter="(&amp;(package=org.apache.felix.shell)(version&gt;=1.0.0))" multiple="false" name="package" optional="false">
+      Import package org.apache.felix.shell ;version=1.0.0
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.framework)(version&gt;=1.4.0))" multiple="false" name="package" optional="false">
+      Import package org.osgi.framework ;version=1.4.0
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.log)(version&gt;=1.3.0))" multiple="false" name="package" optional="false">
+      Import package org.osgi.service.log ;version=1.3.0
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.packageadmin)(version&gt;=1.2.0))" multiple="false" name="package" optional="false">
+      Import package org.osgi.service.packageadmin ;version=1.2.0
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.startlevel)(version&gt;=1.1.0))" multiple="false" name="package" optional="false">
+      Import package org.osgi.service.startlevel ;version=1.1.0
+    </require>
+    <require extend="false" filter="(&amp;(package=org.ungoverned.osgi.service.shell)(version&gt;=1.0.0))" multiple="false" name="package" optional="false">
+      Import package org.ungoverned.osgi.service.shell ;version=1.0.0
+    </require>
+  </resource>
+  <resource id="org.apache.felix.shell.tui/1.4.1" presentationname="Apache Felix Shell TUI" symbolicname="org.apache.felix.shell.tui" uri="repo/org.apache.felix.shell.tui/org.apache.felix.shell.tui-1.4.1.jar" version="1.4.1">
+    <description>
+      A simple textual user interface for Felix' shell service.
+    </description>
+    <size>
+      12740
+    </size>
+    <license>
+      http://www.apache.org/licenses/LICENSE-2.0.txt
+    </license>
+    <documentation>
+      http://felix.apache.org/site/apache-felix-shell-tui.html
+    </documentation>
+    <capability name="bundle">
+      <p n="manifestversion" v="2"/>
+      <p n="presentationname" v="Apache Felix Shell TUI"/>
+      <p n="symbolicname" v="org.apache.felix.shell.tui"/>
+      <p n="version" t="version" v="1.4.1"/>
+    </capability>
+    <require extend="false" filter="(service=org.apache.felix.shell.ShellService)" multiple="true" name="service" optional="false">
+      Import Service org.apache.felix.shell.ShellService
+    </require>
+    <require extend="false" filter="(&amp;(package=org.apache.felix.shell)(version&gt;=1.0.0))" multiple="false" name="package" optional="false">
+      Import package org.apache.felix.shell ;version=1.0.0
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.framework)(version&gt;=1.3.0))" multiple="false" name="package" optional="false">
+      Import package org.osgi.framework ;version=1.3.0
+    </require>
+  </resource>
+  <resource id="org.apache.felix.webconsole/3.1.2" presentationname="Apache Felix Web Management Console" symbolicname="org.apache.felix.webconsole" uri="repo/org.apache.felix.webconsole/org.apache.felix.webconsole-3.1.2.jar" version="3.1.2">
+    <description>
+      Web Based Management Console for OSGi Frameworks. See     
+         http://felix.apache.org/site/apache-felix-web-console.html
+       for more        information on this bundle.
+    </description>
+    <size>
+      617090
+    </size>
+    <license>
+      http://www.apache.org/licenses/LICENSE-2.0.txt
+    </license>
+    <documentation>
+      http://felix.apache.org/site/apache-felix-web-console.html
+    </documentation>
+    <capability name="bundle">
+      <p n="manifestversion" v="2"/>
+      <p n="presentationname" v="Apache Felix Web Management Console"/>
+      <p n="symbolicname" v="org.apache.felix.webconsole"/>
+      <p n="version" t="version" v="3.1.2"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.apache.felix.webconsole"/>
+      <p n="uses" v="javax.servlet,org.osgi.framework,javax.servlet.http"/>
+      <p n="version" t="version" v="3.1.0"/>
+    </capability>
+    <require extend="false" filter="(&amp;(package=javax.portlet)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package javax.portlet
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.servlet)(version&gt;=2.4.0))" multiple="false" name="package" optional="false">
+      Import package javax.servlet ;version=2.4.0
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.servlet.http)(version&gt;=2.4.0))" multiple="false" name="package" optional="false">
+      Import package javax.servlet.http ;version=2.4.0
+    </require>
+    <require extend="false" filter="(&amp;(package=org.apache.felix.scr)(version&gt;=1.0.0))" multiple="false" name="package" optional="true">
+      Import package org.apache.felix.scr ;version=1.0.0
+    </require>
+    <require extend="false" filter="(&amp;(package=org.apache.felix.shell)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package org.apache.felix.shell
+    </require>
+    <require extend="false" filter="(&amp;(package=org.apache.felix.webconsole)(version&gt;=3.1.0))" multiple="false" name="package" optional="false">
+      Import package org.apache.felix.webconsole ;version=3.1.0
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.framework)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package org.osgi.framework
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.cm)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.cm
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.condpermadmin)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.condpermadmin
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.deploymentadmin)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.deploymentadmin
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.http)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package org.osgi.service.http
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.log)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.log
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.metatype)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.metatype
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.packageadmin)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.packageadmin
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.permissionadmin)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.permissionadmin
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.prefs)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.prefs
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.startlevel)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.startlevel
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.wireadmin)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.wireadmin
+    </require>
+  </resource>
+  <resource id="org.apache.felix.webconsole/3.1.8" presentationname="Apache Felix Web Management Console" symbolicname="org.apache.felix.webconsole" uri="repo/org.apache.felix.webconsole/org.apache.felix.webconsole-3.1.8.jar" version="3.1.8">
+    <description>
+      Web Based Management Console for OSGi Frameworks. See     
+         http://felix.apache.org/site/apache-felix-web-console.html
+       for more        information on this bundle.
+    </description>
+    <size>
+      637784
+    </size>
+    <license>
+      http://www.apache.org/licenses/LICENSE-2.0.txt
+    </license>
+    <documentation>
+      http://felix.apache.org/site/apache-felix-web-console.html
+    </documentation>
+    <capability name="bundle">
+      <p n="manifestversion" v="2"/>
+      <p n="presentationname" v="Apache Felix Web Management Console"/>
+      <p n="symbolicname" v="org.apache.felix.webconsole"/>
+      <p n="version" t="version" v="3.1.8"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.apache.felix.webconsole"/>
+      <p n="uses" v="javax.servlet,org.osgi.framework,javax.servlet.http"/>
+      <p n="version" t="version" v="3.1.2"/>
+    </capability>
+    <require extend="false" filter="(&amp;(package=javax.portlet)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package javax.portlet
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.servlet)(version&gt;=2.4.0))" multiple="false" name="package" optional="false">
+      Import package javax.servlet ;version=2.4.0
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.servlet.http)(version&gt;=2.4.0))" multiple="false" name="package" optional="false">
+      Import package javax.servlet.http ;version=2.4.0
+    </require>
+    <require extend="false" filter="(&amp;(package=org.apache.felix.scr)(version&gt;=1.0.0))" multiple="false" name="package" optional="true">
+      Import package org.apache.felix.scr ;version=1.0.0
+    </require>
+    <require extend="false" filter="(&amp;(package=org.apache.felix.shell)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package org.apache.felix.shell
+    </require>
+    <require extend="false" filter="(&amp;(package=org.apache.felix.webconsole)(version&gt;=3.1.2))" multiple="false" name="package" optional="false">
+      Import package org.apache.felix.webconsole ;version=3.1.2
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.framework)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package org.osgi.framework
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.cm)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.cm
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.condpermadmin)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.condpermadmin
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.deploymentadmin)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.deploymentadmin
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.http)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package org.osgi.service.http
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.log)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.log
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.metatype)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.metatype
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.packageadmin)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.packageadmin
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.permissionadmin)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.permissionadmin
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.prefs)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.prefs
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.startlevel)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.startlevel
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.wireadmin)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.wireadmin
+    </require>
+  </resource>
+  <resource id="org.easymock/3.0.0" presentationname="EasyMock" symbolicname="org.easymock" uri="repo/org.easymock/org.easymock-3.0.0.jar" version="3.0.0">
+    <description>
+      EasyMock provides an easy way to create Mock Objects for interfaces
+       and classes generating them on the fly
+    </description>
+    <size>
+      210821
+    </size>
+    <license>
+      http://www.apache.org/licenses/LICENSE-2.0.txt
+    </license>
+    <capability name="bundle">
+      <p n="manifestversion" v="2"/>
+      <p n="presentationname" v="EasyMock"/>
+      <p n="symbolicname" v="org.easymock"/>
+      <p n="version" t="version" v="3.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="mandatory" v="poweruser"/>
+      <p n="package" v="org.easymock.internal"/>
+      <p n="poweruser" v="true"/>
+      <p n="uses" v="org.easymock,net.sf.cglib.proxy,net.sf.cglib.core,org.easymock.internal.matchers,org.objenesis"/>
+      <p n="version" t="version" v="3.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="mandatory" v="poweruser"/>
+      <p n="package" v="org.easymock.internal.matchers"/>
+      <p n="poweruser" v="true"/>
+      <p n="uses" v="org.easymock,org.easymock.internal"/>
+      <p n="version" t="version" v="3.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.easymock"/>
+      <p n="uses" v="org.easymock.internal,org.easymock.internal.matchers"/>
+      <p n="version" t="version" v="3.0.0"/>
+    </capability>
+    <require extend="false" filter="(&amp;(package=net.sf.cglib.core)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package net.sf.cglib.core
+    </require>
+    <require extend="false" filter="(&amp;(package=net.sf.cglib.proxy)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package net.sf.cglib.proxy
+    </require>
+    <require extend="false" filter="(&amp;(package=net.sf.cglib.reflect)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package net.sf.cglib.reflect
+    </require>
+    <require extend="false" filter="(&amp;(package=org.easymock)(version&gt;=3.0.0))" multiple="false" name="package" optional="false">
+      Import package org.easymock ;version=3.0.0
+    </require>
+    <require extend="false" filter="(&amp;(package=org.easymock.internal)(version&gt;=3.0.0)(poweruser=true)(mandatory:&lt;*poweruser))" multiple="false" name="package" optional="false">
+      Import package org.easymock.internal ;version=3.0.0
+    </require>
+    <require extend="false" filter="(&amp;(package=org.objenesis)(version&gt;=1.2.0))" multiple="false" name="package" optional="true">
+      Import package org.objenesis ;version=1.2.0
+    </require>
+  </resource>
+  <resource id="org.eclipse.equinox.supplement/1.3.0.v20100503" presentationname="Supplemental Equinox Functionality" symbolicname="org.eclipse.equinox.supplement" uri="repo/org.eclipse.equinox.supplement/org.eclipse.equinox.supplement-1.3.0.jar" version="1.3.0.v20100503">
+    <size>
+      113247
+    </size>
+    <capability name="bundle">
+      <p n="manifestversion" v="2"/>
+      <p n="presentationname" v="Supplemental Equinox Functionality"/>
+      <p n="symbolicname" v="org.eclipse.equinox.supplement"/>
+      <p n="version" t="version" v="1.3.0.v20100503"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.framework.log"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.service.datalocation"/>
+      <p n="version" t="version" v="1.3.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.service.debug"/>
+      <p n="version" t="version" v="1.1.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.service.environment"/>
+      <p n="version" t="version" v="1.3.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.service.localization"/>
+      <p n="version" t="version" v="1.1.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.service.runnable"/>
+      <p n="version" t="version" v="1.1.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.service.urlconversion"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.storagemanager"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.util"/>
+      <p n="version" t="version" v="1.1.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.framework.debug"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.framework.util"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.framework.internal.core"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.framework.internal.reliablefile"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.core.runtime.internal.adaptor"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <require extend="false" filter="(&amp;(package=org.osgi.framework)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package org.osgi.framework
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.util.tracker)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package org.osgi.util.tracker
+    </require>
+    <require extend="false" filter="(&amp;(package=org.eclipse.osgi.framework.log)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package org.eclipse.osgi.framework.log
+    </require>
+    <require extend="false" filter="(&amp;(package=org.eclipse.osgi.service.datalocation)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package org.eclipse.osgi.service.datalocation
+    </require>
+    <require extend="false" filter="(&amp;(package=org.eclipse.osgi.service.debug)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package org.eclipse.osgi.service.debug
+    </require>
+    <require extend="false" filter="(&amp;(package=org.eclipse.osgi.service.environment)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package org.eclipse.osgi.service.environment
+    </require>
+    <require extend="false" filter="(&amp;(package=org.eclipse.osgi.service.localization)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package org.eclipse.osgi.service.localization
+    </require>
+    <require extend="false" filter="(&amp;(package=org.eclipse.osgi.service.runnable)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package org.eclipse.osgi.service.runnable
+    </require>
+    <require extend="false" filter="(&amp;(package=org.eclipse.osgi.service.urlconversion)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package org.eclipse.osgi.service.urlconversion
+    </require>
+    <require extend="false" filter="(&amp;(package=org.eclipse.osgi.storagemanager)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package org.eclipse.osgi.storagemanager
+    </require>
+    <require extend="false" filter="(&amp;(package=org.eclipse.osgi.util)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package org.eclipse.osgi.util
+    </require>
+    <require extend="false" filter="(|(ee=J2SE-1.4)(ee=CDC-1.0/Foundation-1.0)(ee=J2SE-1.3))" multiple="false" name="ee" optional="false">
+      Execution Environment (|(ee=J2SE-1.4)(ee=CDC-1.0/Foundation-1.0)(ee=J2SE-1.3))
+    </require>
+  </resource>
+  <resource id="org.eclipse.osgi/3.6.1.R36x_v20100806" presentationname="OSGi System Bundle" symbolicname="org.eclipse.osgi" uri="repo/org.eclipse.osgi/org.eclipse.osgi-3.6.1.jar" version="3.6.1.R36x_v20100806">
+    <description>
+      OSGi System Bundle
+    </description>
+    <size>
+      1147547
+    </size>
+    <documentation>
+      http://www.eclipse.org
+    </documentation>
+    <copyright>
+      Copyright (c) 2003, 2004 IBM Corporation and others. All rights
+       reserved. This program and the accompanying materials  are
+       made available under the terms of the Eclipse Public License
+       v1.0 which accompanies this distribution, and is available
+       at http://www.eclipse.org/legal/epl-v10.html
+    </copyright>
+    <capability name="service">
+      <p n="service" v="org.osgi.service.packageadmin.PackageAdmin"/>
+    </capability>
+    <capability name="service">
+      <p n="service" v="org.osgi.service.permissionadmin.PermissionAdmin"/>
+    </capability>
+    <capability name="service">
+      <p n="service" v="org.osgi.service.startlevel.StartLevel"/>
+    </capability>
+    <capability name="service">
+      <p n="service" v="org.eclipse.osgi.service.debug.DebugOptions"/>
+    </capability>
+    <capability name="bundle">
+      <p n="manifestversion" v="2"/>
+      <p n="presentationname" v="OSGi System Bundle"/>
+      <p n="symbolicname" v="org.eclipse.osgi"/>
+      <p n="version" t="version" v="3.6.1.R36x_v20100806"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.event"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.framework.console"/>
+      <p n="version" t="version" v="1.1.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.framework.eventmgr"/>
+      <p n="version" t="version" v="1.2.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.framework.log"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.launch"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.service.datalocation"/>
+      <p n="version" t="version" v="1.3.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.service.debug"/>
+      <p n="version" t="version" v="1.2.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.service.environment"/>
+      <p n="version" t="version" v="1.3.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.service.localization"/>
+      <p n="version" t="version" v="1.1.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.service.pluginconversion"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.service.resolver"/>
+      <p n="version" t="version" v="1.4.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.service.runnable"/>
+      <p n="version" t="version" v="1.1.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.service.security"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.service.urlconversion"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.signedcontent"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.storagemanager"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.util"/>
+      <p n="version" t="version" v="1.1.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.5.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.framework.launch"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.framework.hooks.service"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.condpermadmin"/>
+      <p n="version" t="version" v="1.1.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.framework"/>
+      <p n="version" t="version" v="1.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.packageadmin"/>
+      <p n="version" t="version" v="1.2.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.permissionadmin"/>
+      <p n="version" t="version" v="1.2.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.startlevel"/>
+      <p n="version" t="version" v="1.1.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.url"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.util.tracker"/>
+      <p n="version" t="version" v="1.4.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.util.tracker"/>
+      <p n="version" t="version" v="1.4.2"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.core.runtime.adaptor"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-friends" v="org.eclipse.core.runtime"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.core.runtime.internal.adaptor"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.core.runtime.internal.stats"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-friends" v="org.eclipse.core.runtime"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.baseadaptor"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.baseadaptor.bundlefile"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.baseadaptor.hooks"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.baseadaptor.loader"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.framework.adaptor"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.framework.debug"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.framework.internal.core"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.framework.internal.protocol"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.framework.internal.protocol.bundleentry"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.framework.internal.protocol.bundleresource"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.framework.internal.protocol.reference"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.framework.internal.reliablefile"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.framework.util"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.internal.baseadaptor"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.internal.composite"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.internal.loader"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.internal.loader.buddy"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.internal.module"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.internal.profile"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.internal.resolver"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.internal.serviceregistry"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.internal.permadmin"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.internal.provisional.service.security"/>
+      <p n="version" t="version" v="1.0.0"/>
+      <p n="x-friends" v="org.eclipse.equinox.security.ui"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.internal.provisional.verifier"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-friends" v="org.eclipse.update.core,org.eclipse.ui.workbench,org.eclipse.equinox.p2.artifact.repository"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.internal.service.security"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-friends" v="org.eclipse.equinox.security.ui"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.internal.signedcontent"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.service.internal.composite"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <require extend="false" filter="(|(ee=J2SE-1.5)(ee=OSGi/Minimum-1.2))" multiple="false" name="ee" optional="false">
+      Execution Environment (|(ee=J2SE-1.5)(ee=OSGi/Minimum-1.2))
+    </require>
+  </resource>
+  <resource id="org.eclipse.osgi/3.6.2.R36x_v20110210" presentationname="OSGi System Bundle" symbolicname="org.eclipse.osgi" uri="repo/org.eclipse.osgi/org.eclipse.osgi-3.6.2.jar" version="3.6.2.R36x_v20110210">
+    <description>
+      OSGi System Bundle
+    </description>
+    <size>
+      1148364
+    </size>
+    <documentation>
+      http://www.eclipse.org
+    </documentation>
+    <copyright>
+      Copyright (c) 2003, 2004 IBM Corporation and others. All rights
+       reserved. This program and the accompanying materials  are
+       made available under the terms of the Eclipse Public License
+       v1.0 which accompanies this distribution, and is available
+       at http://www.eclipse.org/legal/epl-v10.html
+    </copyright>
+    <capability name="service">
+      <p n="service" v="org.osgi.service.packageadmin.PackageAdmin"/>
+    </capability>
+    <capability name="service">
+      <p n="service" v="org.osgi.service.permissionadmin.PermissionAdmin"/>
+    </capability>
+    <capability name="service">
+      <p n="service" v="org.osgi.service.startlevel.StartLevel"/>
+    </capability>
+    <capability name="service">
+      <p n="service" v="org.eclipse.osgi.service.debug.DebugOptions"/>
+    </capability>
+    <capability name="bundle">
+      <p n="manifestversion" v="2"/>
+      <p n="presentationname" v="OSGi System Bundle"/>
+      <p n="symbolicname" v="org.eclipse.osgi"/>
+      <p n="version" t="version" v="3.6.2.R36x_v20110210"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.event"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.framework.console"/>
+      <p n="version" t="version" v="1.1.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.framework.eventmgr"/>
+      <p n="version" t="version" v="1.2.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.framework.log"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.launch"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.service.datalocation"/>
+      <p n="version" t="version" v="1.3.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.service.debug"/>
+      <p n="version" t="version" v="1.2.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.service.environment"/>
+      <p n="version" t="version" v="1.3.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.service.localization"/>
+      <p n="version" t="version" v="1.1.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.service.pluginconversion"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.service.resolver"/>
+      <p n="version" t="version" v="1.4.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.service.runnable"/>
+      <p n="version" t="version" v="1.1.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.service.security"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.service.urlconversion"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.signedcontent"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.storagemanager"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.util"/>
+      <p n="version" t="version" v="1.1.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.5.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.framework.launch"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.framework.hooks.service"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.condpermadmin"/>
+      <p n="version" t="version" v="1.1.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.framework"/>
+      <p n="version" t="version" v="1.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.packageadmin"/>
+      <p n="version" t="version" v="1.2.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.permissionadmin"/>
+      <p n="version" t="version" v="1.2.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.startlevel"/>
+      <p n="version" t="version" v="1.1.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.url"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.util.tracker"/>
+      <p n="version" t="version" v="1.4.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.util.tracker"/>
+      <p n="version" t="version" v="1.4.2"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.core.runtime.adaptor"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-friends" v="org.eclipse.core.runtime"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.core.runtime.internal.adaptor"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.core.runtime.internal.stats"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-friends" v="org.eclipse.core.runtime"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.baseadaptor"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.baseadaptor.bundlefile"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.baseadaptor.hooks"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.baseadaptor.loader"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.framework.adaptor"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.framework.debug"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.framework.internal.core"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.framework.internal.protocol"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.framework.internal.protocol.bundleentry"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.framework.internal.protocol.bundleresource"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.framework.internal.protocol.reference"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.framework.internal.reliablefile"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.framework.util"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.internal.baseadaptor"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.internal.composite"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.internal.loader"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.internal.loader.buddy"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.internal.module"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.internal.profile"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.internal.resolver"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.internal.serviceregistry"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.internal.permadmin"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.internal.provisional.service.security"/>
+      <p n="version" t="version" v="1.0.0"/>
+      <p n="x-friends" v="org.eclipse.equinox.security.ui"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.internal.provisional.verifier"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-friends" v="org.eclipse.update.core,org.eclipse.ui.workbench,org.eclipse.equinox.p2.artifact.repository"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.internal.service.security"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-friends" v="org.eclipse.equinox.security.ui"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.internal.signedcontent"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.eclipse.osgi.service.internal.composite"/>
+      <p n="version" t="version" v="0.0.0"/>
+      <p n="x-internal" v="true"/>
+    </capability>
+    <require extend="false" filter="(|(ee=J2SE-1.5)(ee=OSGi/Minimum-1.2))" multiple="false" name="ee" optional="false">
+      Execution Environment (|(ee=J2SE-1.5)(ee=OSGi/Minimum-1.2))
+    </require>
+  </resource>
+  <resource id="org.mockito.mockito-all/1.8.5" presentationname="Mockito Mock Library for Java. Hamcrest-core &amp; Objenesis included in the bundle." symbolicname="org.mockito.mockito-all" uri="repo/org.mockito.mockito-all/org.mockito.mockito-all-1.8.5.jar" version="1.8.5">
+    <size>
+      1439447
+    </size>
+    <capability name="bundle">
+      <p n="manifestversion" v="2"/>
+      <p n="presentationname" v="Mockito Mock Library for Java. Hamcrest-core &amp; Objenesis included in the bundle."/>
+      <p n="symbolicname" v="org.mockito.mockito-all"/>
+      <p n="version" t="version" v="1.8.5"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.mockito.exceptions.base"/>
+      <p n="version" t="version" v="1.8.5"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.mockito.stubbing"/>
+      <p n="uses" v="org.mockito.invocation"/>
+      <p n="version" t="version" v="1.8.5"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.mockito.exceptions.verification.junit"/>
+      <p n="uses" v="junit.framework,org.mockito.exceptions.verification"/>
+      <p n="version" t="version" v="1.8.5"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.mockito.exceptions.misusing"/>
+      <p n="uses" v="org.mockito.exceptions.base"/>
+      <p n="version" t="version" v="1.8.5"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.mockito.invocation"/>
+      <p n="version" t="version" v="1.8.5"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.mockito.runners"/>
+      <p n="uses" v="org.junit.runner,org.junit.runner.notification,org.junit.runner.manipulation"/>
+      <p n="version" t="version" v="1.8.5"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.mockito.verification"/>
+      <p n="version" t="version" v="1.8.5"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.mockito"/>
+      <p n="uses" v="org.hamcrest,org.mockito.stubbing,org.mockito.verification,org.mockito.exceptions.base,org.mockito.exceptions,org.mockito.configuration,org.mockito.invocation"/>
+      <p n="version" t="version" v="1.8.5"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.mockito.exceptions"/>
+      <p n="uses" v="org.mockito.exceptions.verification.junit,org.mockito.exceptions.base,org.mockito.exceptions.verification,org.mockito.exceptions.misusing"/>
+      <p n="version" t="version" v="1.8.5"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.mockito.configuration"/>
+      <p n="uses" v="org.mockito,org.mockito.stubbing"/>
+      <p n="version" t="version" v="1.8.5"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.mockito.stubbing.answers"/>
+      <p n="uses" v="org.mockito.exceptions.base,org.mockito.stubbing,org.mockito.invocation"/>
+      <p n="version" t="version" v="1.8.5"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.mockito.exceptions.verification"/>
+      <p n="uses" v="org.mockito.exceptions.base"/>
+      <p n="version" t="version" v="1.8.5"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.hamcrest"/>
+      <p n="uses" v="org.hamcrest.core"/>
+      <p n="version" t="version" v="1.1.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.hamcrest.core"/>
+      <p n="uses" v="org.hamcrest"/>
+      <p n="version" t="version" v="1.1.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.objenesis"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <require extend="false" filter="(&amp;(package=COM.jrockit.reflect)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package COM.jrockit.reflect
+    </require>
+    <require extend="false" filter="(&amp;(package=jrockit.vm)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package jrockit.vm
+    </require>
+    <require extend="false" filter="(&amp;(package=junit.framework)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package junit.framework
+    </require>
+    <require extend="false" filter="(&amp;(package=org.apache.tools.ant)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package org.apache.tools.ant
+    </require>
+    <require extend="false" filter="(&amp;(package=org.apache.tools.ant.types)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package org.apache.tools.ant.types
+    </require>
+    <require extend="false" filter="(&amp;(package=org.hamcrest)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="false">
+      Import package org.hamcrest ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.junit)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package org.junit
+    </require>
+    <require extend="false" filter="(&amp;(package=org.junit.internal.runners)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package org.junit.internal.runners
+    </require>
+    <require extend="false" filter="(&amp;(package=org.junit.runner)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package org.junit.runner
+    </require>
+    <require extend="false" filter="(&amp;(package=org.junit.runner.manipulation)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package org.junit.runner.manipulation
+    </require>
+    <require extend="false" filter="(&amp;(package=org.junit.runner.notification)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package org.junit.runner.notification
+    </require>
+    <require extend="false" filter="(&amp;(package=org.junit.runners)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package org.junit.runners
+    </require>
+    <require extend="false" filter="(&amp;(package=org.junit.runners.model)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package org.junit.runners.model
+    </require>
+    <require extend="false" filter="(&amp;(package=org.mockito)(version&gt;=1.8.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="false">
+      Import package org.mockito ;version=[1.8.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.mockito.configuration)(version&gt;=1.8.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="false">
+      Import package org.mockito.configuration ;version=[1.8.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.mockito.exceptions)(version&gt;=1.8.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="false">
+      Import package org.mockito.exceptions ;version=[1.8.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.mockito.exceptions.base)(version&gt;=1.8.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="false">
+      Import package org.mockito.exceptions.base ;version=[1.8.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.mockito.exceptions.misusing)(version&gt;=1.8.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="false">
+      Import package org.mockito.exceptions.misusing ;version=[1.8.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.mockito.exceptions.verification)(version&gt;=1.8.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="false">
+      Import package org.mockito.exceptions.verification ;version=[1.8.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.mockito.exceptions.verification.junit)(version&gt;=1.8.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="false">
+      Import package org.mockito.exceptions.verification.junit ;version=[1.8.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.mockito.invocation)(version&gt;=1.8.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="false">
+      Import package org.mockito.invocation ;version=[1.8.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.mockito.runners)(version&gt;=1.8.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="false">
+      Import package org.mockito.runners ;version=[1.8.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.mockito.stubbing)(version&gt;=1.8.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="false">
+      Import package org.mockito.stubbing ;version=[1.8.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.mockito.stubbing.answers)(version&gt;=1.8.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="false">
+      Import package org.mockito.stubbing.answers ;version=[1.8.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.mockito.verification)(version&gt;=1.8.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="false">
+      Import package org.mockito.verification ;version=[1.8.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.objenesis)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="false">
+      Import package org.objenesis ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=sun.reflect)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package sun.reflect
+    </require>
+  </resource>
+  <resource id="org.osgi.ee.minimum/1.1.3.build-200702212030" presentationname="Minimum-EE" symbolicname="org.osgi.ee.minimum" uri="repo/org.osgi.ee.minimum/org.osgi.ee.minimum-1.1.3.jar" version="1.1.3.build-200702212030">
+    <description>
+      Contains the OSGi minimum execution environment stubbed classes
+       and sources
+    </description>
+    <size>
+      391107
+    </size>
+    <documentation>
+      jar:file:/Users/dieter/Documents/OSGI/cnf/repo/org.osgi.ee.minimum/org.osgi.ee.minimum-1.1.3.jar!/www.osgi.org
+    </documentation>
+    <copyright>
+      Copyright (c) OSGi Alliance (2000, 2007). All Rights Reserved.
+    </copyright>
+    <capability name="bundle">
+      <p n="manifestversion" v="2"/>
+      <p n="presentationname" v="Minimum-EE"/>
+      <p n="symbolicname" v="org.osgi.ee.minimum"/>
+      <p n="version" t="version" v="1.1.3.build-200702212030"/>
+    </capability>
+    <require extend="false" filter="(|(ee=OSGi/Minimum-1.1))" multiple="false" name="ee" optional="false">
+      Execution Environment (|(ee=OSGi/Minimum-1.1))
+    </require>
+  </resource>
+  <resource id="org.osgi.impl.bundle.bindex/2.2.0" presentationname="org.osgi.impl.bundle.bindex" symbolicname="org.osgi.impl.bundle.bindex" uri="repo/org.osgi.impl.bundle.bindex/org.osgi.impl.bundle.bindex-2.2.0.jar" version="2.2.0">
+    <description>
+      Provides a command line utility to index a set of bundles.
+       This code can be run from the command line.
+    </description>
+    <size>
+      154585
+    </size>
+    <license>
+      http://www.apache.org/licenses/LICENSE-2.0;description="This
+       material is licensed under the Apache Software License, Version
+       2.0"; link="http://www.apache.org/licenses/LICENSE-2.0"
+    </license>
+    <copyright>
+      (c) Copyright OSGi Alliance, contains licensed code from kXML
+    </copyright>
+    <capability name="bundle">
+      <p n="manifestversion" v="2"/>
+      <p n="presentationname" v="org.osgi.impl.bundle.bindex"/>
+      <p n="symbolicname" v="org.osgi.impl.bundle.bindex"/>
+      <p n="version" t="version" v="2.2.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.bindex"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <require extend="false" filter="(&amp;(package=org.apache.tools.ant)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package org.apache.tools.ant
+    </require>
+    <require extend="false" filter="(&amp;(package=org.apache.tools.ant.types)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package org.apache.tools.ant.types
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.bindex)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="false">
+      Import package org.osgi.service.bindex ;version=[1.0.0,2.0.0)
+    </require>
+  </resource>
+  <resource id="osgi.cmpn/4.2.0.200908310645" presentationname="osgi.cmpn" symbolicname="osgi.cmpn" uri="repo/osgi.cmpn/osgi.cmpn-4.2.0.jar" version="4.2.0.200908310645">
+    <description>
+      OSGi Service Platform Release 4 Version 4.2, Compendium Interfaces
+       and Classes for use in compiling bundles.
+    </description>
+    <size>
+      614256
+    </size>
+    <license>
+      http://opensource.org/licenses/apache2.0.php; link="http://www.apache.org/licenses/LICENSE-2.0";
+       description="Apache License, Version 2.0"
+    </license>
+    <copyright>
+      Copyright (c) OSGi Alliance (2000, 2009). All Rights Reserved.
+    </copyright>
+    <capability name="bundle">
+      <p n="manifestversion" v="2"/>
+      <p n="presentationname" v="osgi.cmpn"/>
+      <p n="symbolicname" v="osgi.cmpn"/>
+      <p n="version" t="version" v="4.2.0.200908310645"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="info.dmtree"/>
+      <p n="version" t="version" v="1.0.1"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="info.dmtree.spi"/>
+      <p n="uses" v="info.dmtree"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="info.dmtree.registry"/>
+      <p n="uses" v="org.osgi.framework,info.dmtree,info.dmtree.notification"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="info.dmtree.notification.spi"/>
+      <p n="uses" v="info.dmtree.notification"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="info.dmtree.security"/>
+      <p n="uses" v="info.dmtree"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="info.dmtree.notification"/>
+      <p n="uses" v="info.dmtree"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.application"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.application"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.1.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.blueprint.container"/>
+      <p n="uses" v="org.osgi.service.blueprint.reflect,org.osgi.framework"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.blueprint.reflect"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.cm"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.3.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.component"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.1.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.deploymentadmin.spi"/>
+      <p n="uses" v="org.osgi.service.deploymentadmin,org.osgi.framework"/>
+      <p n="version" t="version" v="1.0.1"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.deploymentadmin"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.1.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.device"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.1.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.event"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.2.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.http"/>
+      <p n="uses" v="javax.servlet.http,javax.servlet"/>
+      <p n="version" t="version" v="1.2.1"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.io"/>
+      <p n="uses" v="javax.microedition.io"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.log"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.3.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.metatype"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.1.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.monitor"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.prefs"/>
+      <p n="version" t="version" v="1.1.1"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.provisioning"/>
+      <p n="version" t="version" v="1.2.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.upnp"/>
+      <p n="version" t="version" v="1.1.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.useradmin"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.1.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.wireadmin"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.util.measurement"/>
+      <p n="version" t="version" v="1.0.1"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.util.position"/>
+      <p n="uses" v="org.osgi.util.measurement"/>
+      <p n="version" t="version" v="1.0.1"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.util.cdma"/>
+      <p n="uses" v="org.osgi.framework,org.osgi.service.condpermadmin"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.util.gsm"/>
+      <p n="uses" v="org.osgi.framework,org.osgi.service.condpermadmin"/>
+      <p n="version" t="version" v="1.0.1"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.util.mobile"/>
+      <p n="uses" v="org.osgi.framework,org.osgi.service.condpermadmin"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.util.tracker"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.4.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.util.xml"/>
+      <p n="uses" v="javax.xml.parsers,org.osgi.framework"/>
+      <p n="version" t="version" v="1.0.1"/>
+    </capability>
+    <require extend="false" filter="(&amp;(package=info.dmtree)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package info.dmtree ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=info.dmtree.notification)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package info.dmtree.notification ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=info.dmtree.notification.spi)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package info.dmtree.notification.spi ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=info.dmtree.registry)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package info.dmtree.registry ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=info.dmtree.security)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package info.dmtree.security ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=info.dmtree.spi)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package info.dmtree.spi ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.microedition.io)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package javax.microedition.io
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.servlet)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package javax.servlet
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.servlet.http)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package javax.servlet.http
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.xml.parsers)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package javax.xml.parsers
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.application)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.application ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.framework)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.framework ;version=[1.5.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.application)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.application ;version=[1.1.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.blueprint.container)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.blueprint.container ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.blueprint.reflect)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.blueprint.reflect ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.cm)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.cm ;version=[1.3.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.component)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.component ;version=[1.1.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.condpermadmin)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.condpermadmin ;version=[1.1.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.deploymentadmin)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.deploymentadmin ;version=[1.1.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.deploymentadmin.spi)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.deploymentadmin.spi ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.device)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.device ;version=[1.1.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.event)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.event ;version=[1.2.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.http)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.http ;version=[1.2.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.io)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.io ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.log)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.log ;version=[1.3.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.metatype)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.metatype ;version=[1.1.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.monitor)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.monitor ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.prefs)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.prefs ;version=[1.1.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.provisioning)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.provisioning ;version=[1.2.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.upnp)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.upnp ;version=[1.1.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.useradmin)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.useradmin ;version=[1.1.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.wireadmin)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.wireadmin ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.util.cdma)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.util.cdma ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.util.gsm)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.util.gsm ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.util.measurement)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.util.measurement ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.util.mobile)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.util.mobile ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.util.position)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.util.position ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.util.tracker)(version&gt;=1.4.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.util.tracker ;version=[1.4.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.util.xml)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.util.xml ;version=[1.0.0,2.0.0)
+    </require>
+  </resource>
+  <resource id="osgi.cmpn/4.2.1.201001051203" presentationname="osgi.cmpn" symbolicname="osgi.cmpn" uri="repo/osgi.cmpn/osgi.cmpn-4.2.1.jar" version="4.2.1.201001051203">
+    <description>
+      OSGi Service Platform Release 4 Version 4.2, Compendium Interfaces
+       and Classes for use in compiling bundles.
+    </description>
+    <size>
+      659655
+    </size>
+    <license>
+      http://opensource.org/licenses/apache2.0.php; link="http://www.apache.org/licenses/LICENSE-2.0";
+       description="Apache License, Version 2.0"
+    </license>
+    <copyright>
+      Copyright (c) OSGi Alliance (2000, 2010). All Rights Reserved.
+    </copyright>
+    <capability name="bundle">
+      <p n="manifestversion" v="2"/>
+      <p n="presentationname" v="osgi.cmpn"/>
+      <p n="symbolicname" v="osgi.cmpn"/>
+      <p n="version" t="version" v="4.2.1.201001051203"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="info.dmtree"/>
+      <p n="version" t="version" v="1.0.1"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="info.dmtree.spi"/>
+      <p n="uses" v="info.dmtree"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="info.dmtree.registry"/>
+      <p n="uses" v="org.osgi.framework,info.dmtree,info.dmtree.notification"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="info.dmtree.notification.spi"/>
+      <p n="uses" v="info.dmtree.notification"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="info.dmtree.security"/>
+      <p n="uses" v="info.dmtree"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="info.dmtree.notification"/>
+      <p n="uses" v="info.dmtree"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.application"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.application"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.1.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.blueprint.container"/>
+      <p n="uses" v="org.osgi.service.blueprint.reflect,org.osgi.framework"/>
+      <p n="version" t="version" v="1.0.1"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.blueprint.reflect"/>
+      <p n="version" t="version" v="1.0.1"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.cm"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.3.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.component"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.1.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.deploymentadmin.spi"/>
+      <p n="uses" v="org.osgi.service.deploymentadmin,org.osgi.framework"/>
+      <p n="version" t="version" v="1.0.1"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.deploymentadmin"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.1.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.device"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.1.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.event"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.2.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.http"/>
+      <p n="uses" v="javax.servlet.http,javax.servlet"/>
+      <p n="version" t="version" v="1.2.1"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.io"/>
+      <p n="uses" v="javax.microedition.io"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.log"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.3.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.metatype"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.1.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.monitor"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.prefs"/>
+      <p n="version" t="version" v="1.1.1"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.provisioning"/>
+      <p n="version" t="version" v="1.2.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.remoteserviceadmin"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.upnp"/>
+      <p n="version" t="version" v="1.1.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.useradmin"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.1.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.wireadmin"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.util.measurement"/>
+      <p n="version" t="version" v="1.0.1"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.util.position"/>
+      <p n="uses" v="org.osgi.util.measurement"/>
+      <p n="version" t="version" v="1.0.1"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.util.cdma"/>
+      <p n="uses" v="org.osgi.framework,org.osgi.service.condpermadmin"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.util.gsm"/>
+      <p n="uses" v="org.osgi.framework,org.osgi.service.condpermadmin"/>
+      <p n="version" t="version" v="1.0.1"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.util.mobile"/>
+      <p n="uses" v="org.osgi.framework,org.osgi.service.condpermadmin"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.util.tracker"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.4.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.util.xml"/>
+      <p n="uses" v="javax.xml.parsers,org.osgi.framework"/>
+      <p n="version" t="version" v="1.0.1"/>
+    </capability>
+    <require extend="false" filter="(&amp;(package=info.dmtree)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package info.dmtree ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=info.dmtree.notification)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package info.dmtree.notification ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=info.dmtree.notification.spi)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package info.dmtree.notification.spi ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=info.dmtree.registry)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package info.dmtree.registry ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=info.dmtree.security)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package info.dmtree.security ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=info.dmtree.spi)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package info.dmtree.spi ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.microedition.io)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package javax.microedition.io
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.servlet)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package javax.servlet
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.servlet.http)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package javax.servlet.http
+    </require>
+    <require extend="false" filter="(&amp;(package=javax.xml.parsers)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package javax.xml.parsers
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.application)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.application ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.framework)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.framework ;version=[1.5.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.application)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.application ;version=[1.1.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.blueprint.container)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.blueprint.container ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.blueprint.reflect)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.blueprint.reflect ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.cm)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.cm ;version=[1.3.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.component)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.component ;version=[1.1.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.condpermadmin)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.condpermadmin ;version=[1.1.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.deploymentadmin)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.deploymentadmin ;version=[1.1.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.deploymentadmin.spi)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.deploymentadmin.spi ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.device)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.device ;version=[1.1.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.event)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.event ;version=[1.2.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.http)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.http ;version=[1.2.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.io)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.io ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.log)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.log ;version=[1.3.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.metatype)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.metatype ;version=[1.1.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.monitor)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.monitor ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.prefs)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.prefs ;version=[1.1.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.provisioning)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.provisioning ;version=[1.2.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.remoteserviceadmin)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.remoteserviceadmin ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.upnp)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.upnp ;version=[1.1.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.useradmin)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.useradmin ;version=[1.1.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.wireadmin)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.wireadmin ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.util.cdma)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.util.cdma ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.util.gsm)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.util.gsm ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.util.measurement)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.util.measurement ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.util.mobile)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.util.mobile ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.util.position)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.util.position ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.util.tracker)(version&gt;=1.4.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.util.tracker ;version=[1.4.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.util.xml)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.util.xml ;version=[1.0.0,2.0.0)
+    </require>
+  </resource>
+  <resource id="osgi.core/4.3.0.201102171602" presentationname="osgi.core" symbolicname="osgi.core" uri="repo/osgi.core/osgi.core-4.3.0.jar" version="4.3.0.201102171602">
+    <description>
+      OSGi Service Platform Release 4 Version 4.3, Core Interfaces
+       and Classes for use in compiling bundles.
+    </description>
+    <size>
+      337567
+    </size>
+    <license>
+      http://opensource.org/licenses/apache2.0.php; link="http://www.apache.org/licenses/LICENSE-2.0";
+       description="Apache License, Version 2.0"
+    </license>
+    <copyright>
+      Copyright (c) OSGi Alliance (2000, 2011). All Rights Reserved.
+    </copyright>
+    <capability name="bundle">
+      <p n="manifestversion" v="2"/>
+      <p n="presentationname" v="osgi.core"/>
+      <p n="symbolicname" v="osgi.core"/>
+      <p n="version" t="version" v="4.3.0.201102171602"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.framework.startlevel"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.framework.wiring"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.framework.hooks.bundle"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.framework.hooks.service"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.1.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.framework.hooks.resolver"/>
+      <p n="uses" v="org.osgi.framework.wiring"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.framework.launch"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.framework"/>
+      <p n="uses" v="javax.security.auth.x500"/>
+      <p n="version" t="version" v="1.6.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.framework.hooks.weaving"/>
+      <p n="uses" v="org.osgi.framework.wiring"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.condpermadmin"/>
+      <p n="uses" v="org.osgi.framework,org.osgi.service.permissionadmin"/>
+      <p n="version" t="version" v="1.1.1"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.packageadmin"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.2.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.permissionadmin"/>
+      <p n="version" t="version" v="1.2.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.startlevel"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.1.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.url"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <require extend="false" filter="(&amp;(package=javax.security.auth.x500)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package javax.security.auth.x500
+    </require>
+  </resource>
+  <resource id="osgi.core/4.2.1.201001051203" presentationname="osgi.core" symbolicname="osgi.core" uri="repo/osgi.core/osgi.core-4.2.1.jar" version="4.2.1.201001051203">
+    <description>
+      OSGi Service Platform Release 4 Version 4.2, Core Interfaces
+       and Classes for use in compiling bundles.
+    </description>
+    <size>
+      247375
+    </size>
+    <license>
+      http://opensource.org/licenses/apache2.0.php; link="http://www.apache.org/licenses/LICENSE-2.0";
+       description="Apache License, Version 2.0"
+    </license>
+    <copyright>
+      Copyright (c) OSGi Alliance (2000, 2010). All Rights Reserved.
+    </copyright>
+    <capability name="bundle">
+      <p n="manifestversion" v="2"/>
+      <p n="presentationname" v="osgi.core"/>
+      <p n="symbolicname" v="osgi.core"/>
+      <p n="version" t="version" v="4.2.1.201001051203"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.framework.hooks.service"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.framework"/>
+      <p n="uses" v="javax.security.auth.x500"/>
+      <p n="version" t="version" v="1.5.1"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.framework.launch"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.condpermadmin"/>
+      <p n="uses" v="org.osgi.framework,org.osgi.service.permissionadmin"/>
+      <p n="version" t="version" v="1.1.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.packageadmin"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.2.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.permissionadmin"/>
+      <p n="version" t="version" v="1.2.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.startlevel"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.1.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.url"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <require extend="false" filter="(&amp;(package=javax.security.auth.x500)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package javax.security.auth.x500
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.framework)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.framework ;version=[1.5.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.framework.hooks.service)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.framework.hooks.service ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.framework.launch)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.framework.launch ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.condpermadmin)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.condpermadmin ;version=[1.1.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.packageadmin)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.packageadmin ;version=[1.2.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.permissionadmin)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.permissionadmin ;version=[1.2.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.startlevel)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.startlevel ;version=[1.1.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.url)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.url ;version=[1.0.0,2.0.0)
+    </require>
+  </resource>
+  <resource id="osgi.core/4.2.0.200908310645" presentationname="osgi.core" symbolicname="osgi.core" uri="repo/osgi.core/osgi.core-4.2.0.jar" version="4.2.0.200908310645">
+    <description>
+      OSGi Service Platform Release 4 Version 4.2, Core Interfaces
+       and Classes for use in compiling bundles.
+    </description>
+    <size>
+      247028
+    </size>
+    <license>
+      http://opensource.org/licenses/apache2.0.php; link="http://www.apache.org/licenses/LICENSE-2.0";
+       description="Apache License, Version 2.0"
+    </license>
+    <copyright>
+      Copyright (c) OSGi Alliance (2000, 2009). All Rights Reserved.
+    </copyright>
+    <capability name="bundle">
+      <p n="manifestversion" v="2"/>
+      <p n="presentationname" v="osgi.core"/>
+      <p n="symbolicname" v="osgi.core"/>
+      <p n="version" t="version" v="4.2.0.200908310645"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.framework.hooks.service"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.framework"/>
+      <p n="uses" v="javax.security.auth.x500"/>
+      <p n="version" t="version" v="1.5.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.framework.launch"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.condpermadmin"/>
+      <p n="uses" v="org.osgi.framework,org.osgi.service.permissionadmin"/>
+      <p n="version" t="version" v="1.1.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.packageadmin"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.2.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.permissionadmin"/>
+      <p n="version" t="version" v="1.2.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.startlevel"/>
+      <p n="uses" v="org.osgi.framework"/>
+      <p n="version" t="version" v="1.1.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="org.osgi.service.url"/>
+      <p n="version" t="version" v="1.0.0"/>
+    </capability>
+    <require extend="false" filter="(&amp;(package=javax.security.auth.x500)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package javax.security.auth.x500
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.framework)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.framework ;version=[1.5.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.framework.hooks.service)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.framework.hooks.service ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.framework.launch)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.framework.launch ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.condpermadmin)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.condpermadmin ;version=[1.1.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.packageadmin)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.packageadmin ;version=[1.2.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.permissionadmin)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.permissionadmin ;version=[1.2.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.startlevel)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.startlevel ;version=[1.1.0,2.0.0)
+    </require>
+    <require extend="false" filter="(&amp;(package=org.osgi.service.url)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))" multiple="false" name="package" optional="true">
+      Import package org.osgi.service.url ;version=[1.0.0,2.0.0)
+    </require>
+  </resource>
+
+  <resource id="google-guava/0.9.0" presentationname="google-guava" symbolicname="google-guava" uri="file:/Users/Dieter/Documents/OSGI/cnf/repo/google-guava/google-guava-0.9.0.jar" version="0.9.0">
+    <size>
+      1156925
+    </size>
+    <category id="__local_repo__"/>
+    <capability name="bundle">
+      <p n="manifestversion" v="2"/>
+      <p n="presentationname" v="google-guava"/>
+      <p n="symbolicname" v="google-guava"/>
+      <p n="version" t="version" v="0.9.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="com.google.common.annotations"/>
+      <p n="version" t="version" v="0.9.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="com.google.common.base"/>
+      <p n="uses" v="javax.annotation"/>
+      <p n="version" t="version" v="0.9.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="com.google.common.base.internal"/>
+      <p n="version" t="version" v="0.9.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="com.google.common.collect"/>
+      <p n="uses" v="com.google.common.base,javax.annotation,com.google.common.primitives"/>
+      <p n="version" t="version" v="0.9.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="com.google.common.io"/>
+      <p n="uses" v="com.google.common.base,javax.annotation,com.google.common.primitives"/>
+      <p n="version" t="version" v="0.9.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="com.google.common.net"/>
+      <p n="uses" v="javax.annotation,com.google.common.base,com.google.common.io,com.google.common.primitives,com.google.common.collect"/>
+      <p n="version" t="version" v="0.9.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="com.google.common.primitives"/>
+      <p n="uses" v="com.google.common.base,sun.misc,javax.annotation"/>
+      <p n="version" t="version" v="0.9.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="com.google.common.util.concurrent"/>
+      <p n="uses" v="com.google.common.base,javax.annotation,com.google.common.collect"/>
+      <p n="version" t="version" v="0.9.0"/>
+    </capability>
+    <require extend="false" filter="(&amp;(package=javax.annotation)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package javax.annotation
+    </require>
+    <require extend="false" filter="(&amp;(package=sun.misc)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package sun.misc
+    </require>
+  </resource>
+
+  <resource id="google-guava/0.9.0" presentationname="google-guava" symbolicname="google-guava" uri="file:/Users/Dieter/Documents/OSGI/cnf/repo/google-guava/google-guava-0.9.0.jar" version="0.9.0">
+    <size>
+      1157302
+    </size>
+    <category id="__local_repo__"/>
+    <capability name="bundle">
+      <p n="manifestversion" v="2"/>
+      <p n="presentationname" v="google-guava"/>
+      <p n="symbolicname" v="google-guava"/>
+      <p n="version" t="version" v="0.9.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="com.google.common.annotations"/>
+      <p n="version" t="version" v="0.9.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="com.google.common.base"/>
+      <p n="uses" v="javax.annotation"/>
+      <p n="version" t="version" v="0.9.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="com.google.common.base.internal"/>
+      <p n="version" t="version" v="0.9.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="com.google.common.collect"/>
+      <p n="uses" v="com.google.common.base,javax.annotation,com.google.common.primitives"/>
+      <p n="version" t="version" v="0.9.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="com.google.common.io"/>
+      <p n="uses" v="com.google.common.base,javax.annotation,com.google.common.primitives"/>
+      <p n="version" t="version" v="0.9.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="com.google.common.net"/>
+      <p n="uses" v="javax.annotation,com.google.common.base,com.google.common.io,com.google.common.primitives,com.google.common.collect"/>
+      <p n="version" t="version" v="0.9.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="com.google.common.primitives"/>
+      <p n="uses" v="com.google.common.base,sun.misc,javax.annotation"/>
+      <p n="version" t="version" v="0.9.0"/>
+    </capability>
+    <capability name="package">
+      <p n="package" v="com.google.common.util.concurrent"/>
+      <p n="uses" v="com.google.common.base,javax.annotation,com.google.common.collect"/>
+      <p n="version" t="version" v="0.9.0"/>
+    </capability>
+    <require extend="false" filter="(&amp;(package=javax.annotation)(version&gt;=0.0.0))" multiple="false" name="package" optional="false">
+      Import package javax.annotation
+    </require>
+    <require extend="false" filter="(&amp;(package=sun.misc)(version&gt;=0.0.0))" multiple="false" name="package" optional="true">
+      Import package sun.misc
+    </require>
+  </resource>
+</repository>
