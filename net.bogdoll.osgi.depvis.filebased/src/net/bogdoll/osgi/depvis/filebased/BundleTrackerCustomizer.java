@@ -10,6 +10,7 @@ import java.util.logging.Logger;
 import net.bogdoll.osgi.depvis.core.DependencyToDot;
 
 import org.osgi.framework.Bundle;
+import org.osgi.framework.BundleContext;
 import org.osgi.framework.BundleEvent;
 
 public class BundleTrackerCustomizer implements org.osgi.util.tracker.BundleTrackerCustomizer {
@@ -24,18 +25,24 @@ public class BundleTrackerCustomizer implements org.osgi.util.tracker.BundleTrac
 	
 	@Override
 	public Object addingBundle(Bundle bundle, BundleEvent event) {
-		dumpDependency(bundle.getBundleContext().getBundles());
+		BundleContext bc = bundle.getBundleContext();
+		if(bc!=null)
+			dumpDependency(bc.getBundles());
 		return bundle;
 	}
 
 	@Override
 	public void modifiedBundle(Bundle bundle, BundleEvent event, Object object) {
-		dumpDependency(bundle.getBundleContext().getBundles());
+		BundleContext bc = bundle.getBundleContext();
+		if(bc!=null)
+			dumpDependency(bc.getBundles());
 	}
 
 	@Override
 	public void removedBundle(Bundle bundle, BundleEvent event, Object object) {
-		dumpDependency(bundle.getBundleContext().getBundles());
+		BundleContext bc = bundle.getBundleContext();
+		if(bc!=null)
+			dumpDependency(bc.getBundles());
 	}
 	
 	private void dumpDependency(Bundle[] aBundles) {

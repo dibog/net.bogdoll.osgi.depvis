@@ -1,0 +1,5 @@
+-buildpath: osgi.core,\
+	osgi.cmpn,\
+	net.bogdoll.osgi.depvis.core;version=latest
+Bundle-Activator: net.bogdoll.osgi.depvis.basic.Activator
+Private-Package: net.bogdoll.osgi.depvis.basic

@@ -19,7 +19,7 @@ public class Activator implements BundleActivator, ServiceTrackerCustomizer {
 	
 	@Override
 	public void start(BundleContext context) throws Exception {
-		mDotFile = new File(System.getProperty("dep.dot.file","osgi.dot"));
+		mDotFile = new File(System.getProperty("dep.dot.file","dependency.dot"));
 		mContext = context;
 		mServiceTracker = new ServiceTracker(context, DependencyToDot.class.getName(), this);		
 		mServiceTracker.open();
