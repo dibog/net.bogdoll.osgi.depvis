@@ -1,0 +1,11 @@
+-runfw: org.apache.felix.framework;version=3.2.2
+-runbundles: google-guava,\
+	osgi.core,\
+	org.apache.felix.shell,\
+	org.apache.felix.shell.tui,\
+	osgi.package.test;version=latest,\
+	osgi.package.testA;version=latest,\
+	osgi.package.testB;version=latest,\
+	org.apache.felix.log,\
+	net.bogdoll.osgi.depvis.core;version=latest,\
+	net.bogdoll.osgi.depvis.ui;version=latest

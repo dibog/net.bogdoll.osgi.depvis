@@ -1,0 +1,5 @@
+Private-Package: bundleb.priv
+Export-Package: bundleb.pub
+
+Include-Resource: OSGI-OPT/bnd.bnd.orig=bnd.bnd,\
+	OSGI-OPT/bundle.B.bnd=bundle.B.bnd

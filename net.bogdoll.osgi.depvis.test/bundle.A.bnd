@@ -1,0 +1,5 @@
+Private-Package: bundlea.priv
+Export-Package: bundlea.pub;version=1.0
+
+Include-Resource: OSGI-OPT/bnd.bnd.orig=bnd.bnd,\
+	OSGI-OPT/bundle.A.bnd=bundle.A.bnd

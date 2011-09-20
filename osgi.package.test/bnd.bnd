@@ -1,0 +1,8 @@
+Private-Package: bundlec
+Import-Package: bundlea;version=[2.0','3),\
+	bundleb;version=[2.0','3),\
+	*
+-buildpath: osgi.package.testA;version=latest,\
+	osgi.package.testB;version=latest,\
+	osgi.core
+Bundle-Activator: bundlec.Activator

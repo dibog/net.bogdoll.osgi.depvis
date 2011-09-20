@@ -1,0 +1,11 @@
+-runfw: org.apache.felix.framework
+-runbundles: org.apache.felix.shell;version=1.4.2,\
+	org.apache.felix.shell.tui;version=1.4.1,\
+	google-guava,\
+	net.bogdoll.osgi.depvis.core;version=latest,\
+	org.apache.felix.log,\
+	net.bogdoll.osgi.depvis.test.bundle.A;version=latest,\
+	net.bogdoll.osgi.depvis.test.bundle.Aa;version=latest,\
+	net.bogdoll.osgi.depvis.test.bundle.B;version=latest,\
+	net.bogdoll.osgi.depvis.test.bundle.C;version=latest,\
+	net.bogdoll.osgi.depvis.ui;version=latest

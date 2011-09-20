@@ -29,7 +29,6 @@ import com.google.common.collect.Multimap;
 public class Activator implements BundleActivator, BundleTrackerCustomizer {
 
 	private BundleTracker mBundleTracker;
-	private Bundle mBundle;
 
 	@Override
 	public void start(BundleContext context) throws Exception {

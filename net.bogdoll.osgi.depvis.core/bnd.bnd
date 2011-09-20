@@ -1,0 +1,7 @@
+-buildpath: osgi.core,\
+	osgi.cmpn,\
+	google-guava
+Bundle-Activator: net.bogdoll.osgi.depvis.core.Activator
+Private-Package: net.bogdoll.osgi.util,\
+	net.bogdoll.osgi.depvis.core.impl
+Export-Package: net.bogdoll.osgi.depvis.core
