@@ -1,3 +1,5 @@
 /.metadata
 /*/generated
 /*/bin
+/*/bin_test
+/*/*.dot
